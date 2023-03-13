@@ -13,6 +13,28 @@ export default function UserFriendlyFeatures() {
                         CoinSender:
                     </div>
                 </div>
+                <div className={styles.cards_group}>
+                    <div className={styles.cards_group_row}>
+                        <div className={styles.row_card}>
+                            Card 1
+                        </div>
+                        <div className={styles.row_card}>
+                            Card 2
+                        </div>
+                        <div className={styles.row_card}>
+                            Card 3
+                        </div>
+                    </div>
+                    <div className={styles.cards_group_row}>
+                        <div className={styles.row_card}>
+                            Card 4
+                        </div>
+                        <div className={styles.row_card}>
+                            Card 5
+                        </div>
+                    </div>
+                    <div className={styles.cards_group_row}>Column 3</div>
+                </div>
             </div>
         </div>
     )
