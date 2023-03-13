@@ -1,5 +1,7 @@
 import styles from "./user-styles.module.css"
 
+import {mockCardsData} from './mockCardsData'
+
 export default function UserFriendlyFeatures() {
     return (
         <div className={styles.wrapper}>
@@ -19,32 +21,21 @@ export default function UserFriendlyFeatures() {
                 <div className={styles.cards_group}>
                     <div className={styles.cards_group_row}>
                         <div className={styles.row_card}>
-                            <div className={styles.card_content}>
-                                <img src='/assets/btc_1.svg' alt='btc_1.svg'/>
-                                <div className={styles.card_text_block}>
-                                    <div className={styles.text_block_title}>
-                                        Massive Crypto Payouts with Ease
+                            {mockCardsData.map((item, index) => {
+                                return (
+                                    <div className={styles.card_content} key={item.id}>
+                                        <img src={`${item.icon}`} alt='img'/>
+                                        <div className={styles.card_text_block}>
+                                            <div className={styles.text_block_title}>
+                                                {item.title}
+                                            </div>
+                                            <div className={styles.text_block_description}>
+                                                {item.description}
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className={styles.text_block_description}>
-                                        CoinSender processes even the most complex multi-transaction payments to your
-                                        crypto drop/pool participants and other recipients on different blockchains.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.row_card}>
-                            Card 2
-                        </div>
-                        <div className={styles.row_card}>
-                            Card 3
-                        </div>
-                    </div>
-                    <div className={styles.cards_group_row}>
-                        <div className={styles.row_card}>
-                            Card 4
-                        </div>
-                        <div className={styles.row_card}>
-                            Card 5
+                                )
+                            })}
                         </div>
                     </div>
                     <div className={styles.cards_group_row}>Column 3</div>
