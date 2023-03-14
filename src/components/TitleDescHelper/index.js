@@ -1,4 +1,4 @@
-import styles from "./title-desc.module.css"
+import styles from "./title-desc.module.scss"
 
 export default function TitleDescriptionHelper(props) {
     return (

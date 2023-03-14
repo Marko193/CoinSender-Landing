@@ -11,8 +11,8 @@ export default function UserFriendlyFeatures() {
                 />
                 <div className={styles.cards_group}>
                     <div className={styles.arrows_ark_group}>
-                        <img src='/assets/arrow_ark_left.svg' alt=' img'/>
-                        <img src='/assets/arrow_ark_right.svg' alt=' img'/>
+                        <img src='/assets/arrow_ark_left.svg' alt='img'/>
+                        <img src='/assets/arrow_ark_right.svg' alt='img'/>
                     </div>
                     <div className={styles.cards_group_row} id={styles.first_card_row}>
                         <div className={styles.row_card}>
