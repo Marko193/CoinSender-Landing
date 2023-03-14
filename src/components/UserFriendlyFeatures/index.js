@@ -1,7 +1,5 @@
 import styles from "./user-styles.module.css"
 
-import {mockCardsDataFirst, mockCardsDataSecond} from './mockCardsData'
-
 export default function UserFriendlyFeatures() {
     return (
         <div className={styles.wrapper}>
@@ -19,7 +17,11 @@ export default function UserFriendlyFeatures() {
                     </div>
                 </div>
                 <div className={styles.cards_group}>
-                    <div className={styles.cards_group_row}>
+                    <div className={styles.arrows_ark_group}>
+                        <img src='/assets/arrow_ark_left.svg' alt='img' />
+                        <img src='/assets/arrow_ark_right.svg' alt='img' />
+                    </div>
+                    <div className={styles.cards_group_row} id={styles.first_card_row}>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
                                 <img src='/assets/btc_1.svg' alt='img'/>
