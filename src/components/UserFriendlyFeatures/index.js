@@ -20,42 +20,78 @@ export default function UserFriendlyFeatures() {
                 </div>
                 <div className={styles.cards_group}>
                     <div className={styles.cards_group_row}>
-                        {mockCardsDataFirst.map((item, index) => {
-                            return (
-                                <div className={styles.row_card}>
-                                    <div className={styles.card_content} key={item.id}>
-                                        <img src={`${item.icon}`} alt='img'/>
-                                        <div className={styles.card_text_block}>
-                                            <div className={styles.text_block_title}>
-                                                {item.title}
-                                            </div>
-                                            <div className={styles.text_block_description}>
-                                                {item.description}
-                                            </div>
-                                        </div>
+                        <div className={styles.row_card}>
+                            <div className={styles.card_content}>
+                                <img src='/assets/btc_1.svg' alt='img'/>
+                                <div className={styles.card_text_block}>
+                                    <div className={styles.text_block_title}>
+                                        Massive Crypto Payouts with Ease
+                                    </div>
+                                    <div className={styles.text_block_description}>
+                                        CoinSender processes even the most complex multi-transaction payments to your
+                                        crypto drop/pool participants and other recipients on different blockchains.
                                     </div>
                                 </div>
-                            )
-                        })}
+                            </div>
+                        </div>
+                        <div className={styles.row_card}>
+                            <div className={styles.card_content}>
+                                <img src='/assets/btc_2.svg' alt='img'/>
+                                <div className={styles.card_text_block}>
+                                    <div className={styles.text_block_title}>
+                                        Streamlined Employee Payments
+                                    </div>
+                                    <div className={styles.text_block_description}>
+                                        Manage employee records and salary payouts to make the process faster and more
+                                        convenient.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.row_card}>
+                            <div className={styles.card_content}>
+                                <img src='/assets/icon_8949.svg' alt='img'/>
+                                <div className={styles.card_text_block}>
+                                    <div className={styles.text_block_title}>
+                                        Customer Database
+                                    </div>
+                                    <div className={styles.text_block_description}>
+                                        Keep track of your customers information and transaction history with our
+                                        customer database feature.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.cards_group_row}>
-                        {mockCardsDataSecond.map((item, index) => {
-                            return (
-                                <div className={styles.row_card}>
-                                    <div className={styles.card_content} key={item.id}>
-                                        <img src={`${item.icon}`} alt='img'/>
-                                        <div className={styles.card_text_block}>
-                                            <div className={styles.text_block_title}>
-                                                {item.title}
-                                            </div>
-                                            <div className={styles.text_block_description}>
-                                                {item.description}
-                                            </div>
-                                        </div>
+                        <div className={styles.row_card}>
+                            <div className={styles.card_content}>
+                                <img src='/assets/btc_3.svg' alt='img'/>
+                                <div className={styles.card_text_block}>
+                                    <div className={styles.text_block_title}>
+                                        Transparent Transaction History
+                                    </div>
+                                    <div className={styles.text_block_description}>
+                                        Our decentralized database provides a transparent track of fund distribution
+                                        history, ensuring you can easily track your transactions.
                                     </div>
                                 </div>
-                            )
-                        })}
+                            </div>
+                        </div>
+                        <div className={styles.row_card}>
+                            <div className={styles.card_content}>
+                                <img src='/assets/btc_4.svg' alt='img'/>
+                                <div className={styles.card_text_block}>
+                                    <div className={styles.text_block_title}>
+                                        Customizable Invoices
+                                    </div>
+                                    <div className={styles.text_block_description}>
+                                        Our platform also features a customizable invoice creator, so you can
+                                        efficiently send professional invoices.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.cards_group_row}>
                         <div className={styles.sign_up}>

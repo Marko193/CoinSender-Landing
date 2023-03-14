@@ -16,7 +16,7 @@ export const mockCardsDataFirst = [
         id: 3,
         icon: '/assets/icon_8949.svg',
         title: 'Customer Database',
-        description: 'Keep track of your customers\' information and transaction history with our customer database feature.'
+        description: 'Keep track of your customers information and transaction history with our customer database feature.'
     }
 ]
 
