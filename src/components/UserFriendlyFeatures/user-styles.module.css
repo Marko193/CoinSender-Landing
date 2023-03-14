@@ -45,8 +45,8 @@
 .cards_group {
     display: flex;
     flex-direction: column;
-    width: 100%;
     row-gap: 45px;
+    background-color: green;
 }
 
 .cards_group_row {
@@ -94,4 +94,35 @@
     align-items: center;
     letter-spacing: -0.03em;
     color: rgba(245, 248, 252, 0.9);
+}
+
+.sign_up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sign_up_button {
+    width: 175px;
+    height: 36px;
+    background: linear-gradient(105.88deg, #092C3E 13.55%, #00E8EB 148.77%, #8BFFFF 285.75%);
+    border: 1px solid rgba(245, 248, 252, 0.3);
+    border-radius: 51px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #F5F8FC;
+}
+
+.sign_up_description {
+    width: 376px;
+    padding-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: rgba(245, 248, 252, 0.9);
+
 }

@@ -1,6 +1,6 @@
 import styles from "./user-styles.module.css"
 
-import {mockCardsData} from './mockCardsData'
+import {mockCardsDataFirst, mockCardsDataSecond} from './mockCardsData'
 
 export default function UserFriendlyFeatures() {
     return (
@@ -20,9 +20,9 @@ export default function UserFriendlyFeatures() {
                 </div>
                 <div className={styles.cards_group}>
                     <div className={styles.cards_group_row}>
-                        <div className={styles.row_card}>
-                            {mockCardsData.map((item, index) => {
-                                return (
+                        {mockCardsDataFirst.map((item, index) => {
+                            return (
+                                <div className={styles.row_card}>
                                     <div className={styles.card_content} key={item.id}>
                                         <img src={`${item.icon}`} alt='img'/>
                                         <div className={styles.card_text_block}>
@@ -34,11 +34,37 @@ export default function UserFriendlyFeatures() {
                                             </div>
                                         </div>
                                     </div>
-                                )
-                            })}
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div className={styles.cards_group_row}>
+                        {mockCardsDataSecond.map((item, index) => {
+                            return (
+                                <div className={styles.row_card}>
+                                    <div className={styles.card_content} key={item.id}>
+                                        <img src={`${item.icon}`} alt='img'/>
+                                        <div className={styles.card_text_block}>
+                                            <div className={styles.text_block_title}>
+                                                {item.title}
+                                            </div>
+                                            <div className={styles.text_block_description}>
+                                                {item.description}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div className={styles.cards_group_row}>
+                        <div className={styles.sign_up}>
+                            <button className={styles.sign_up_button}>Sign up</button>
+                            <div className={styles.sign_up_description}> Sign up for CoinSender today and experience the
+                                power of fast, secure, and easy multi-transaction payouts in cryptocurrency.
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.cards_group_row}>Column 3</div>
                 </div>
             </div>
         </div>
