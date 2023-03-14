@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
-
+import CoinSenderBenefits from "@/components/CoinSenderBenefits";
 export default function Home() {
   return (
     <>
@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
       <main >
           <UserFriendlyFeatures/>
+          <CoinSenderBenefits/>
       </main>
     </>
   )

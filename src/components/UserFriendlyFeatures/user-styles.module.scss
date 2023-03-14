@@ -1,13 +1,10 @@
 @import "./src/styles/breakpoints.scss";
 
-.wrapper {}
-
 .wrapper_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #151628;
     padding: 0 264px 0 264px;
 
     @media screen and (max-width: $screen-laptop-max) {
@@ -60,7 +57,6 @@
 
     @media screen and (max-width: $screen-laptop-max) {
         flex-direction: column;
-        padding-top: 50px;
         gap: 30px;
     }
 }

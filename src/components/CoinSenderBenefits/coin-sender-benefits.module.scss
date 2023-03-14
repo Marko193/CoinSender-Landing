@@ -1,0 +1,14 @@
+@import "./src/styles/breakpoints.scss";
+
+.benefits_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 264px 0 264px;
+
+
+  @media screen and (max-width: $screen-laptop-max) {
+    padding: 0 16px 0 16px;
+  }
+}
