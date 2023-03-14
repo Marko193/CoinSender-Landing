@@ -1,6 +1,6 @@
-.wrapper {
+@import "./src/styles/breakpoints.scss";
 
-}
+.wrapper {}
 
 .wrapper_content {
     display: flex;
@@ -8,7 +8,11 @@
     justify-content: center;
     align-items: center;
     background-color: #151628;
-    padding: 0 264px 0 264px
+    padding: 0 264px 0 264px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        padding: 0 16px 0 16px;
+    }
 }
 
 
@@ -19,21 +23,46 @@
     align-items: center;
     row-gap: 45px;
     padding-top: 28px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        align-items: normal;
+        padding: initial;
+        row-gap: 30px;
+    }
 }
 
 .arrows_ark_group {
     display: flex;
     gap: 145px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        display: none;
+    }
 }
 
 #first_card_row {
     margin-top: -45px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+}
+
+#second_card_row {
+    padding-top: 0;
 }
 
 .cards_group_row {
     display: flex;
     flex-direction: row;
     gap: 35px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 30px;
+    }
 }
 
 .row_card {
@@ -43,10 +72,19 @@
     background: rgba(34, 36, 57, 0.6);
     border: 1px solid #36394C;
     border-radius: 13px;
+
+    @media screen and (max-width: $screen-laptop-max){
+        width: auto;
+        height: 278px;
+    }
 }
 
 .card_content {
     padding: 20px 15px 33px 20px;
+
+    @include phones {
+        padding: 20px 16px 26px 20px;
+    }
 }
 
 .card_text_block {
@@ -56,6 +94,10 @@
 .arrow_rounded_left_layout{
     margin-right: -35px;
     margin-top: -45px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        display: none;
+    }
 }
 
 .arrow_rounded_left_layout img {
@@ -65,6 +107,10 @@
 .arrow_rounded_right_layout{
     margin-left: -35px;
     margin-top: -45px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+        display: none;
+    }
 }
 
 .arrow_rounded_right_layout img{
@@ -91,6 +137,15 @@
     align-items: center;
     letter-spacing: -0.03em;
     color: rgba(245, 248, 252, 0.9);
+
+    @include phones{
+        width: auto;
+    }
+}
+
+#sign_up_layout {
+    @include phones {
+    }
 }
 
 .sign_up {
@@ -121,5 +176,9 @@
     line-height: 130%;
     letter-spacing: -0.03em;
     color: rgba(245, 248, 252, 0.9);
+
+    @include phones {
+        width: auto;
+    }
 
 }

@@ -1,5 +1,6 @@
-import styles from "./user-styles.module.css"
+import styles from "./user-styles.module.scss"
 import TitleDescriptionHelper from "@/components/TitleDescHelper";
+
 
 export default function UserFriendlyFeatures() {
     return (
@@ -8,6 +9,7 @@ export default function UserFriendlyFeatures() {
                 <TitleDescriptionHelper
                     title="User-friendly features that will unlock your workflow potential."
                     description=" With CoinSender, you can easily distribute tokens and make multi-transaction payouts in cryptocurrency hassle-free. Our platform is designed specifically to make the process fast, secure, and efficient. Here s what you can expect when you sign up for CoinSender:"
+                    // displayDescription={false}
                 />
                 <div className={styles.cards_group}>
                     <div className={styles.arrows_ark_group}>
@@ -58,7 +60,7 @@ export default function UserFriendlyFeatures() {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.cards_group_row}>
+                    <div className={styles.cards_group_row} id={styles.second_card_row}>
                         <div className={styles.arrow_rounded_left_layout}>
                             <img src='/assets/arrow_rounded_left.svg' alt=' img'/>
                         </div>
@@ -94,7 +96,7 @@ export default function UserFriendlyFeatures() {
                             <img src='/assets/arrow_rounded_right.svg' alt=' img'/>
                         </div>
                     </div>
-                    <div className={styles.cards_group_row}>
+                    <div className={styles.cards_group_row} id={styles.sign_up_layout}>
                         <div className={styles.sign_up}>
                             <button className={styles.sign_up_button}>Sign up</button>
                             <div className={styles.sign_up_description}> Sign up for CoinSender today and experience the

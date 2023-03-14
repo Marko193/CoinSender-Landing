@@ -8,10 +8,10 @@ $screen-tablet-max: 768px;
 
 // Laptops and small screen
 $screen-laptop-min: 769px;
-$screen-laptop-max: 1024px;
+$screen-laptop-max: 950px;
 
 // Large screens and Desktops
-$screen-desktop-min: 1025px;
+$screen-desktop-min: 951px;
 $screen-desktop-max: 1200px;
 
 // TV and Extra Large Screens
@@ -42,7 +42,7 @@ $screen-tv-min: 1201px;
 }
 
 @mixin tv {
-  @media only screen and (min-width: #{$screen-tv-min}) and (max-width: #{$screen-tv-max}) {
+  @media only screen and (min-width: #{$screen-tv-min}){
     @content;
   }
 }

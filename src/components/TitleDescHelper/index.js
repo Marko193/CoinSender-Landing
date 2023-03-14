@@ -1,13 +1,13 @@
 import styles from "./title-desc.module.scss"
 
-export default function TitleDescriptionHelper(props) {
+export default function TitleDescriptionHelper({title, description, displayDescription}) {
     return (
         <div className={styles.header}>
             <div className={styles.header_title}>
-                {props.title}
+                {title}
             </div>
             <div className={styles.header_description}>
-                {props.description}
+                {description}
             </div>
         </div>
     )
