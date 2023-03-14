@@ -82,6 +82,24 @@
     padding-top: 24px;
 }
 
+.arrow_rounded_left_layout{
+    margin-right: -35px;
+    margin-top: -45px;
+}
+
+.arrow_rounded_left_layout img {
+    margin-right: -10px;
+}
+
+.arrow_rounded_right_layout{
+    margin-left: -35px;
+    margin-top: -45px;
+}
+
+.arrow_rounded_right_layout img{
+    margin-left: -5px;
+}
+
 .text_block_title {
     width: 217px;
     font-weight: 700;

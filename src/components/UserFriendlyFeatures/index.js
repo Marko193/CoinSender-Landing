@@ -66,6 +66,9 @@ export default function UserFriendlyFeatures() {
                         </div>
                     </div>
                     <div className={styles.cards_group_row}>
+                        <div className={styles.arrow_rounded_left_layout}>
+                            <img src='/assets/arrow_rounded_left.svg' alt='img' />
+                        </div>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
                                 <img src='/assets/btc_3.svg' alt='img'/>
@@ -93,6 +96,9 @@ export default function UserFriendlyFeatures() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className={styles.arrow_rounded_right_layout}>
+                            <img src='/assets/arrow_rounded_right.svg' alt='img' />
                         </div>
                     </div>
                     <div className={styles.cards_group_row}>
