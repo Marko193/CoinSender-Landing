@@ -1,30 +1,23 @@
 import styles from "./user-styles.module.css"
+import TitleDescriptionHelper from "@/components/TitleDescHelper";
 
 export default function UserFriendlyFeatures() {
     return (
         <div className={styles.wrapper}>
             <div className={styles.wrapper_content}>
-                <div className={styles.header}>
-                    <div className={styles.header_title}>User-friendly features that will unlock your workflow
-                        potential.
-                    </div>
-                    <div className={styles.header_description}>
-                        With CoinSender, you can easily distribute tokens and make
-                        multi-transaction payouts in cryptocurrency hassle-free. Our platform is designed specifically
-                        to
-                        make the process fast, secure, and efficient. Here's what you can expect when you sign up for
-                        CoinSender:
-                    </div>
-                </div>
+                <TitleDescriptionHelper
+                    title="User-friendly features that will unlock your workflow potential."
+                    description=" With CoinSender, you can easily distribute tokens and make multi-transaction payouts in cryptocurrency hassle-free. Our platform is designed specifically to make the process fast, secure, and efficient. Here s what you can expect when you sign up for CoinSender:"
+                />
                 <div className={styles.cards_group}>
                     <div className={styles.arrows_ark_group}>
-                        <img src='/assets/arrow_ark_left.svg' alt='img' />
-                        <img src='/assets/arrow_ark_right.svg' alt='img' />
+                        <img src='/assets/arrow_ark_left.svg' alt=' img'/>
+                        <img src='/assets/arrow_ark_right.svg' alt=' img'/>
                     </div>
                     <div className={styles.cards_group_row} id={styles.first_card_row}>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
-                                <img src='/assets/btc_1.svg' alt='img'/>
+                                <img src='/assets/btc_1.svg' alt=' img'/>
                                 <div className={styles.card_text_block}>
                                     <div className={styles.text_block_title}>
                                         Massive Crypto Payouts with Ease
@@ -38,7 +31,7 @@ export default function UserFriendlyFeatures() {
                         </div>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
-                                <img src='/assets/btc_2.svg' alt='img'/>
+                                <img src='/assets/btc_2.svg' alt=' img'/>
                                 <div className={styles.card_text_block}>
                                     <div className={styles.text_block_title}>
                                         Streamlined Employee Payments
@@ -52,7 +45,7 @@ export default function UserFriendlyFeatures() {
                         </div>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
-                                <img src='/assets/icon_8949.svg' alt='img'/>
+                                <img src='/assets/icon_8949.svg' alt=' img'/>
                                 <div className={styles.card_text_block}>
                                     <div className={styles.text_block_title}>
                                         Customer Database
@@ -67,11 +60,11 @@ export default function UserFriendlyFeatures() {
                     </div>
                     <div className={styles.cards_group_row}>
                         <div className={styles.arrow_rounded_left_layout}>
-                            <img src='/assets/arrow_rounded_left.svg' alt='img' />
+                            <img src='/assets/arrow_rounded_left.svg' alt=' img'/>
                         </div>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
-                                <img src='/assets/btc_3.svg' alt='img'/>
+                                <img src='/assets/btc_3.svg' alt=' img'/>
                                 <div className={styles.card_text_block}>
                                     <div className={styles.text_block_title}>
                                         Transparent Transaction History
@@ -85,7 +78,7 @@ export default function UserFriendlyFeatures() {
                         </div>
                         <div className={styles.row_card}>
                             <div className={styles.card_content}>
-                                <img src='/assets/btc_4.svg' alt='img'/>
+                                <img src='/assets/btc_4.svg' alt=' img'/>
                                 <div className={styles.card_text_block}>
                                     <div className={styles.text_block_title}>
                                         Customizable Invoices
@@ -98,7 +91,7 @@ export default function UserFriendlyFeatures() {
                             </div>
                         </div>
                         <div className={styles.arrow_rounded_right_layout}>
-                            <img src='/assets/arrow_rounded_right.svg' alt='img' />
+                            <img src='/assets/arrow_rounded_right.svg' alt=' img'/>
                         </div>
                     </div>
                     <div className={styles.cards_group_row}>

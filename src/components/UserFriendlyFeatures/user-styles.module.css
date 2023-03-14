@@ -11,35 +11,6 @@
     padding: 0 264px 0 264px
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 909px;
-}
-
-.header_title {
-    height: 124px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 130%;
-    color: #F5F8FC;
-}
-
-.header_description {
-    width: 767px;
-    padding: 25px 30px 0 30px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: -0.03em;
-    color: rgba(245, 248, 252, 0.9);
-}
 
 .cards_group {
     display: flex;
