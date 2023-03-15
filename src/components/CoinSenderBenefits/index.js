@@ -8,7 +8,7 @@ import {data} from './mockCarouselCardsData';
 
 import TitleDescriptionHelper from "@/components/TitleDescHelper";
 
-function CoinSenderBenefits() {
+export default function CoinSenderBenefits()  {
     const theme = useTheme();
     const [activeStep, setActiveStep] = useState(0);
 
@@ -158,8 +158,7 @@ function CoinSenderBenefits() {
                     <i className={styles.back_button}/>
                 </Button>}
             />
+            <button className={styles.sign_up_button_mobile}>Try now</button>
         </div>
     </>);
 }
-
-export default CoinSenderBenefits;

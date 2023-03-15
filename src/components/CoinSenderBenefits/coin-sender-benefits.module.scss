@@ -5,13 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 
   @media screen and (max-width: $screen-laptop-max) {
     padding: 0 16px 0 16px;
-  }
-
-  @media screen and (max-width: 1279px) {
-    display: none;
   }
 }
 
@@ -21,6 +18,10 @@
   margin-top: 35px;
   margin-bottom: 30px;
   padding: 0 25px 0 25px;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .content {
@@ -65,6 +66,11 @@
   line-height: 130%;
   letter-spacing: -0.03em;
   color: rgba(245, 248, 252, 0.9);
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: 1280px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .separator {
@@ -105,8 +111,24 @@
   line-height: 130%;
   color: #F5F8FC;
 
-  @include phones{
-    width: 100%;
+  @include phones {
+    display: none;
+  }
+}
+
+.sign_up_button_mobile {
+  width: 175px;
+  height: 36px;
+  background: linear-gradient(105.88deg, #092C3E 13.55%, #00E8EB 148.77%, #8BFFFF 285.75%);
+  border: 1px solid rgba(245, 248, 252, 0.3);
+  border-radius: 51px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #F5F8FC;
+
+  @media screen and (min-width: $screen-tablet-min) {
+    display: none;
   }
 }
 
@@ -119,7 +141,6 @@
 .carousel_content {
   padding: 25px 30px 25px 20px;
   margin: 0 auto;
-
   overflow: hidden;
   width: 338px;
   height: 215px;
@@ -127,23 +148,22 @@
   border: 1px solid #36394C;
   border-radius: 10px;
 
-  @media screen and (min-width: $screen-tablet-min) and (max-width: 1280px){
+  @media screen and (min-width: $screen-tablet-min) and (max-width: 1280px) {
     width: auto;
-    //height: auto;
-    margin: 0 16px 0 16px;
+    margin: 0 10% 0 10%;
     text-align: center;
   }
 }
 
 .next_button {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border: solid #FFFFFF;
-    border-width: 0 1px 1px 0;
-    padding: 1px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: solid #FFFFFF;
+  border-width: 0 1px 1px 0;
+  padding: 1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .back_button {
@@ -155,8 +175,4 @@
   padding: 1px;
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-}
-
-.MuiMobileStepper-dots {
-  background-color: red;
 }
