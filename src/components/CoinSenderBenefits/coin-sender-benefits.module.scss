@@ -5,68 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //padding: 30px 264px 0 264px;
 
   @media screen and (max-width: $screen-laptop-max) {
     padding: 0 16px 0 16px;
   }
 }
 
-//
-//.benefits_layout {
-//  display: flex;
-//  flex-flow: row wrap;
-//  margin-top: 30px;
-//  //justify-content: space-between;
-//  //margin: 0 108px 0 108px;
-//  background: rgba(34, 36, 57, 0.6);
-//  border: 1px solid #36394C;
-//  border-radius: 10px;
-//
-//}
-//
-//.layout_column {
-//  //background-color: red;
-//}
-//
-//.benefit_block {
-//  width: 300px;
-//  height: 215px;
-//  margin-top: 32px;
-//  padding: 0 32px 25px;
-//}
-//
-//.benefit_block:after { /* ADDED */
-//  content: '';
-//  position: absolute;
-//  border-left: 1px solid black;
-//  right: -10px; /* adjust this */
-//  height: 80%; /* adjust this */
-//}
-//
-//.block_title {
-//  font-weight: 700;
-//  font-size: 20px;
-//  line-height: 130%;
-//  color: #F5F8FC;
-//
-//}
-//
-//.block_description {
-//  padding-top: 12px;
-//  font-weight: 400;
-//  font-size: 16px;
-//  line-height: 130%;
-//  display: flex;
-//  align-items: center;
-//  letter-spacing: -0.03em;
-//  color: rgba(245, 248, 252, 0.9);
-//}
-
 .content_container {
   display: grid;
   background: rgba(34, 36, 57, 0.6);
   margin-top: 35px;
+  margin-bottom: 30px;
   padding: 0 25px 0 25px;
 }
 
@@ -77,19 +26,8 @@
   border-radius: 10px;
 }
 
-//#first_row:first-child {
-//  padding-left: 25px;
-//}
-//
-//#first_row:last-child {
-//  padding-right: 25px;
-//}
-
 .block {
-  //padding: 75px 25px 0 25px;
-  height: 300px;
   position: relative;
-  //background-color: orange;
 }
 
 .block:after {
@@ -99,7 +37,6 @@
   top: 32px;
   right: -32px;
   height: 215px;
-  //border: 1px solid #36394C;
 }
 
 .block:last-child:after {
@@ -108,7 +45,6 @@
 
 .sub_block {
   padding-top: 75px;
-  //background-color: green;
 }
 
 .title {
@@ -128,10 +64,7 @@
 }
 
 .separator {
-  //margin-top: 90px;
-  //border: 1px solid #36394C;
   width: 100%;
-  //height: 50px;
   margin: 90px 0;
   text-align: center;
   position: relative;
@@ -146,3 +79,14 @@
   top: 50%;
   z-index: 1;
 }
+
+#second_row {
+  .block {
+    padding-bottom: 50px;
+  }
+
+  .sub_block {
+    padding-top: 40px;
+  }
+}
+
