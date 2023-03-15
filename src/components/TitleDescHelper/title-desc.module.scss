@@ -7,6 +7,7 @@
   align-items: center;
   text-align: center;
   width: 909px;
+  margin: 0 auto;
 
   @media screen and (max-width: $screen-laptop-max) {
     display: block;
@@ -15,15 +16,14 @@
   }
 }
 
-
 .header_title {
   padding-top: 20px;
   font-weight: 700;
   font-size: 48px;
   line-height: 130%;
-  color: #F5F8FC;
+  color: #f5f8fc;
 
-  @include phones{
+  @include phones {
     width: 80%;
     font-size: 26px;
   }
@@ -31,7 +31,6 @@
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-laptop-max) {
     padding-top: 20px;
     text-align: center;
-
   }
 }
 
