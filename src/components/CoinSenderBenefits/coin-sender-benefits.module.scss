@@ -9,6 +9,10 @@
   @media screen and (max-width: $screen-laptop-max) {
     padding: 0 16px 0 16px;
   }
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .content_container {
@@ -106,24 +110,29 @@
   }
 }
 
-.slide_block {
-  //background-color: white;
-  height: 174px;
-  background: rgba(34, 36, 57, 0.6);
-  border: 1px solid #36394C;
-  border-radius: 10px;
+.carousel_layout {
+  @media screen and (min-width: 1279px) {
+    display: none;
+  }
 }
 
 .carousel_content {
   padding: 25px 30px 25px 20px;
   margin: 0 auto;
-  //margin: 0 16px 0 16px;
+
   overflow: hidden;
   width: 338px;
   height: 215px;
   background: rgba(34, 36, 57, 0.6);
   border: 1px solid #36394C;
   border-radius: 10px;
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: 1280px){
+    width: auto;
+    //height: auto;
+    margin: 0 16px 0 16px;
+    text-align: center;
+  }
 }
 
 .next_button {
