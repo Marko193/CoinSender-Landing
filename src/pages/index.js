@@ -1,10 +1,9 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
 import { Header } from "@/components/Header/header";
 import { MultiTransactionSection } from "@/components/multi-transaction/multi-transaction";
 import { HowItWorks } from "@/components/How-it-works";
-
+import CoinSenderBenefits from "@/components/CoinSenderBenefits";
 export default function Home() {
   return (
     <>
@@ -17,8 +16,9 @@ export default function Home() {
       <Header />
       <main>
         <MultiTransactionSection />
+        <UserFriendlyFeatures />
         <HowItWorks />
-        {/* <UserFriendlyFeatures /> */}
+        <CoinSenderBenefits />
       </main>
     </>
   );

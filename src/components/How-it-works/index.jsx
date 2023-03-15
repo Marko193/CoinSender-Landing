@@ -5,6 +5,7 @@ import MakePayment from "../../assets/images/how-it-works/make-payment.svg";
 import Secure from "../../assets/images/how-it-works/secure.svg";
 import SignUp from "../../assets/images/how-it-works/signup.svg";
 import Track from "../../assets/images/how-it-works/track.svg";
+import TitleDescriptionHelper from "../TitleDescHelper";
 
 export const HowItWorks = () => {
   const items = [
@@ -52,24 +53,27 @@ export const HowItWorks = () => {
 
   return (
     <section>
-      <div className={styles.section__container + " container"}>
-        {items.map(({ icon, title, description }) => (
-          <div key={title} className={styles.block}>
-            <div className={styles.image_block}>
-              <Image src={icon} alt="" />
+      <div className="container">
+        <TitleDescriptionHelper title="How it works" />
+        <div className={styles.section__container}>
+          {items.map(({ icon, title, description }) => (
+            <div key={title} className={styles.block}>
+              <div className={styles.image_block}>
+                <Image src={icon} alt="" />
+              </div>
+              <div className={styles.block_title}>{title}</div>
+              <div className={styles.block_description}>{description}</div>
+              <div>
+                <iframe
+                  style={{ height: "178px", width: "100%" }}
+                  src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                ></iframe>
+              </div>
             </div>
-            <div className={styles.block_title}>{title}</div>
-            <div className={styles.block_description}>{description}</div>
-            <div>
-              <iframe
-                style={{ height: "178px", width: "100%" }}
-                src="https://www.youtube.com/embed/tgbNymZ7vqY"
-              ></iframe>
-            </div>
+          ))}
+          <div className={styles.block}>
+            <button>Try now</button>
           </div>
-        ))}
-        <div className={styles.block}>
-          <button>Try now</button>
         </div>
       </div>
       {/* <div>
