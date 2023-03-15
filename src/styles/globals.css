@@ -1,73 +1,129 @@
+@import url("./multi-transaction/multi-transaction.css");
+
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-:focus, :active {
-    outline: none;
+:focus,
+:active {
+  outline: none;
 }
 
-a:focus, a:active {
-    outline: none;
+a:focus,
+a:active {
+  outline: none;
 }
 
-nav, footer, header, aside {
-    display: block;
+nav,
+footer,
+header,
+aside {
+  display: block;
 }
 
-html, body {
-    font-family: 'Altone Trial', sans-serif;
-    font-style: normal;
-    height: 100%;
-    width: 100%;
-    line-height: 1;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+html,
+body {
+  font-family: "Altone Trial", sans-serif;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+  background: #151628;
+
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
-    font-family: inherit;
+input,
+button,
+textarea {
+  font-family: inherit;
 }
 
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: inherit;
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 16px;
+  color: #f5f8fc;
+}
+
+.button {
+  background: linear-gradient(
+    105.88deg,
+    #092c3e 13.55%,
+    #00e8eb 148.77%,
+    #8bffff 285.75%
+  );
+  border: 1px solid rgba(245, 248, 252, 0.3);
+  border-radius: 51px;
+  padding: 9px 31px;
+  font-size: 14px;
+  color: #f5f8fc;
+}
+
+@media screen and (max-width: 1024px) {
+  .button {
+    font-size: 10px;
+    padding: 9px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%;
+    padding: 9px 31px;
+    font-size: 14px;
+  }
 }

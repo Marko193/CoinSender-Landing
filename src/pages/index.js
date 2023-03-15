@@ -1,6 +1,9 @@
-import Head from 'next/head'
-import styles from "@/styles/Home.module.css"
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
+import { Header } from "@/components/Header/header";
+import { MultiTransactionSection } from "@/components/multi-transaction/multi-transaction";
+import { HowItWorks } from "@/components/How-it-works";
 
 export default function Home() {
   return (
@@ -11,9 +14,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main >
-          <UserFriendlyFeatures/>
+      <Header />
+      <main>
+        <MultiTransactionSection />
+        <HowItWorks />
+        {/* <UserFriendlyFeatures /> */}
       </main>
     </>
-  )
+  );
 }

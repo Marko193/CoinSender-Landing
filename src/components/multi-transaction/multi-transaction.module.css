@@ -1,0 +1,74 @@
+.section {
+  margin-top: 55px;
+}
+
+.multi-transaction {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 4fr 2fr;
+  align-items: center;
+  gap: 46px;
+}
+
+.multi-transaction--title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 24px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.multi-transaction--title span {
+  color: #02abb4;
+}
+
+.multi-transaction--description {
+  font-weight: 400;
+  color: rgba(245, 248, 252, 0.9);
+  margin-bottom: 26px;
+  letter-spacing: -0.03em;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #fff;
+}
+
+.multi-transaction--logo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: rgba(34, 36, 57, 0.6);
+  border: 1px solid #36394c;
+  border-radius: 13px;
+  height: 470px;
+  padding: 45px 21px 42px 39px;
+}
+
+@media screen and (max-width: 768px) {
+  .multi-transaction {
+    grid-template-columns: 1fr;
+  }
+  .multi-transaction--description {
+    display: none;
+  }
+  .multi-transaction--logo {
+    padding: 20px;
+    order: 2; /* move the logo after the title */
+  }
+  .multi-transaction > div:first-child {
+    order: 1; /* move the title before the logo */
+  }
+  .multi-transaction > div:last-child {
+    order: 3; /* keep the button as the last child */
+  }
+  .multi-transaction--title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .multi-transaction--logo {
+    height: 200px;
+  }
+  .multi-transaction--logo img {
+    max-height: 100%;
+  }
+}
