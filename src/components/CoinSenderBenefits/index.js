@@ -27,7 +27,7 @@ export default function CoinSenderBenefits() {
                                 ensures that your transactions are always secure and transparent.
                             </div>
                         </div>
-                        <div className={styles.separator} style={{marginTop: '70px'}}/>
+                        <div className={styles.separator} style={{marginTop: '65px'}}/>
                     </div>
                     <div className={styles.block}>
                         <div className={styles.sub_block}>
