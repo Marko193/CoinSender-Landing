@@ -1,0 +1,31 @@
+.menu {
+  display: none;
+  background-color: #121928;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 73px;
+  transform: translateX(-100%);
+  z-index: 1000;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu ul li {
+  text-align: center;
+}
+.menu-active {
+  transform: translateX(0%);
+}

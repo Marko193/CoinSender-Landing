@@ -1,0 +1,51 @@
+.section {
+  margin-top: 55px;
+}
+
+.multi-transaction {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 4fr 2fr;
+  align-items: center;
+  gap: 46px;
+}
+.multi-transaction--title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 24px;
+}
+.multi-transaction--title span {
+  color: #02abb4;
+}
+.multi-transaction--description {
+  font-weight: 400;
+  color: rgba(245, 248, 252, 0.9);
+  margin-bottom: 26px;
+  letter-spacing: -0.03em;
+  line-height: 130%;
+  word-wrap: break-word;
+}
+
+.multi-transaction--logo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: rgba(34, 36, 57, 0.6);
+  border: 1px solid #36394c;
+  border-radius: 13px;
+  height: 470px;
+  padding: 45px 21px 42px 39px;
+}
+@media screen and (max-width: 768px) {
+  .multi-transaction {
+    grid-template-columns: 1fr;
+  }
+}
+
+.multi-transaction .multi-transaction--description {
+  font-size: 16px;
+}
+.multi-transaction .multi-transaction--title {
+  font-size: 32px;
+}

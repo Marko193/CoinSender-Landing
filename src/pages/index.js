@@ -1,5 +1,8 @@
-import Head from 'next/head'
+import Head from "next/head";
 import UserFriendlyFeatures from "@/components/UserFriendlyFeatures";
+import { Header } from "@/components/Header/header";
+import { MultiTransactionSection } from "@/components/multi-transaction/multi-transaction";
+import { HowItWorks } from "@/components/How-it-works";
 import CoinSenderBenefits from "@/components/CoinSenderBenefits";
 export default function Home() {
   return (
@@ -10,10 +13,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main >
-          <UserFriendlyFeatures/>
-          <CoinSenderBenefits/>
+      <Header />
+      <main>
+        <MultiTransactionSection />
+        <UserFriendlyFeatures />
+        <HowItWorks />
+        <CoinSenderBenefits />
       </main>
     </>
-  )
+  );
 }
