@@ -5,7 +5,6 @@ import MakePayment from "../../assets/images/how-it-works/make-payment.svg";
 import Secure from "../../assets/images/how-it-works/secure.svg";
 import SignUp from "../../assets/images/how-it-works/signup.svg";
 import Track from "../../assets/images/how-it-works/track.svg";
-import Slider from "../Slider/slider";
 
 export const HowItWorks = () => {
   const items = [
@@ -53,7 +52,7 @@ export const HowItWorks = () => {
 
   return (
     <section>
-      {/* <div className={styles.section__container + " container"}>
+      <div className={styles.section__container + " container"}>
         {items.map(({ icon, title, description }) => (
           <div key={title} className={styles.block}>
             <div className={styles.image_block}>
@@ -72,10 +71,10 @@ export const HowItWorks = () => {
         <div className={styles.block}>
           <button>Try now</button>
         </div>
-      </div> */}
-      <div>
-        <Slider slides={items} />
       </div>
+      {/* <div>
+        <Slider slides={items} />
+      </div> */}
     </section>
   );
 };
