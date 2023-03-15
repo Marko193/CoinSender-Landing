@@ -89,6 +89,7 @@ export default function CoinSenderBenefits() {
                     </div>
                 </div>
             </div>
+            <button className={styles.sign_up_button}>Try now</button>
         </div>
     )
 }
