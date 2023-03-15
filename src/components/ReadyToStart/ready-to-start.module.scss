@@ -15,14 +15,14 @@
 
 .ready_to_start_layout {
   margin-bottom: 90px;
-  padding: 80px 15% 0 15%;
+  padding: 80px 10% 0 10%;
 
   @include phones {
     padding: 70px 16px 0 16px;
   }
 
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-desktop-min) {
-    padding: 70px 10% 0 10%;
+    padding: 70px 5% 0 5%;
   }
 }
 
@@ -71,10 +71,6 @@
 
   @media screen and (max-width: $screen-tablet-min){
     width: 100%;
-  }
-
-  @media screen and (max-width: $screen-tablet-min) {
     padding: 0 10% 0 10%;;
-
   }
 }
