@@ -69,9 +69,14 @@
   border: 1px solid #36394C;
   border-radius: 13px;
 
-  @media screen and (max-width: $screen-laptop-max) {
+  @include phones {
     width: auto;
     height: 278px;
+  }
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-laptop-max) {
+    width: auto;
+    height: auto;
   }
 }
 
