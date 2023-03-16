@@ -4,19 +4,19 @@
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 80px 10% 0 10%;
+  margin: 0 10% 0 10%;
 
   @include phones {
     margin: 0 16px 0 16px;
   }
 
   @media screen and (min-width: 1921px) {
-    margin: 80px 15% 0 15%;
+    margin: 0 15% 0 15%;
   }
 }
 
 .container_text_wrapper {
-
+    margin-top: 30px;
 }
 
 .title {
@@ -29,6 +29,10 @@
   flex-direction: column;
   color: #FFFFFF;
 
+  @include phones {
+    font-size: 26px;
+  }
+
   @media screen and (min-width: 1921px) {
     margin: 0 15% 0 15%;
   }
@@ -39,7 +43,6 @@
 }
 
 .description {
-  margin-top: 25px;
   font-family: 'HK Guise', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -49,8 +52,17 @@
   align-items: center;
   text-align: center;
   letter-spacing: -0.03em;
-
   color: #FFFFFF;
+
+  margin: 25px 20% 35px 20%;
+
+  @media screen and (max-width: $screen-desktop-max) {
+    margin: 25px 0 0 0;;
+  }
+
+  @media screen and (min-width: 1921px) {
+    margin: 25px 30% 35px 30%;
+  }
 }
 
 .discover_button {
