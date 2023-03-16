@@ -2,9 +2,10 @@
 
 .backend_product_container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 80px 10% 0 10%;
+  margin: 0 10% 0 10%;
 
   @include phones {
     margin: 0 7% 0 7%;
@@ -83,27 +84,75 @@
 }
 
 
-#first_avatar_wrapper {
+.first_avatar_wrapper {
   width: 400px;
   margin: 0 auto;
   //position: absolute;
 
-  img {
-    width: 144px;
-    height: 144px;
-  }
-
-  @media screen and (max-width: $screen-tv-min){
+  @media screen and (max-width: $screen-laptop-max) {
     display: none;
   }
 }
 
+//right-left animation
 .avatar_layout {
   position: relative;
   -webkit-animation: linear infinite;
   animation: run 3s infinite;
   //-webkit-animation-duration: 4s;
   width: 144px;
+}
+
+#first_avatar {
+  width: 144px;
+  height: 144px;
+}
+
+#second_third_avatars_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //margin: 0 100px 0 100px;
+  width: auto;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    display: none;
+  }
+}
+
+.second_third_avatars {
+  width: 400px;
+  position: relative;
+}
+
+.second_animation_wrapper {
+  width: 100px;
+  position: relative;
+  -webkit-animation: linear infinite;
+  animation: run 3s infinite;
+}
+
+.third_animation_wrapper {
+  width: 100px;
+  position: relative;
+  -webkit-animation: linear infinite;
+  animation: run 3s infinite;
+}
+
+.second_avatar {
+  width: 80px;
+  height: 80px;
+}
+
+#third_avatar {
+  width: 550px;
+
+
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
 }
 
 @-webkit-keyframes run {
@@ -128,5 +177,9 @@
   100% {
     left: 0;
   }
+}
+
+#second_third_avatars_wrapper {
+
 }
 
