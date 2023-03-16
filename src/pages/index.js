@@ -9,6 +9,7 @@ import BackendProduct from "@/components/BackendProduct";
 
 import { Network } from "@/components/network/network";
 import { Roadmap } from "@/components/Roadmap/Roadmap";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
@@ -29,6 +30,7 @@ export default function Home() {
         <Roadmap />
         <BackendProduct />
       </main>
+        <Footer/>
     </>
   );
 }
