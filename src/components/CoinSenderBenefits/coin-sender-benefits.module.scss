@@ -1,14 +1,85 @@
 @import "./src/styles/breakpoints.scss";
 
+.benefits_container {
+  margin: 80px 10% 0 10%;
+  @include phones {
+    margin: 0 16px 0 16px;
+  }
+
+  @media screen and (min-width: 1921px) {
+    margin: 80px 15% 0 15%;
+  }
+}
+
 .benefits_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 
   @media screen and (max-width: $screen-laptop-max) {
-    padding: 0 16px 0 16px;
+    display: block;
+    width: auto;
+    text-align: start;
   }
+}
+
+.header_title {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: #f5f8fc;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-laptop-max) {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1921px) {
+    margin: 0 15% 0 15%;
+  }
+}
+
+.header_description {
+  width: 767px;
+  padding: 25px 30px 0 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: rgba(245, 248, 252, 0.9);
+
+  @include phones {
+    font-size: 16px;
+    padding: 30px 0 0 0;
+    text-align: start;
+  }
+
+  @media screen and (max-width: $screen-laptop-max) {
+    display: block;
+    width: auto;
+  }
+  
+  //@media screen and () {
+    
+  //}
 }
 
 .content_container {
@@ -17,6 +88,10 @@
   margin-top: 35px;
   margin-bottom: 30px;
   padding: 0 25px 0 25px;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .content {
@@ -52,6 +127,10 @@
   font-size: 20px;
   line-height: 130%;
   color: #F5F8FC;
+
+  @media screen and (min-width: 1921px) {
+    //padding: 0 15% 0 15%;
+  }
 }
 
 .description {
@@ -61,11 +140,15 @@
   line-height: 130%;
   letter-spacing: -0.03em;
   color: rgba(245, 248, 252, 0.9);
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: 1280px) {
+    //margin: 0 auto;
+  }
 }
 
 .separator {
   width: 100%;
-  margin: 90px 0;
+  margin-top: 85px;
   text-align: center;
   position: relative;
 }
@@ -90,3 +173,85 @@
   }
 }
 
+.sign_up_button {
+  width: 175px;
+  height: 36px;
+  background: linear-gradient(105.88deg, #092C3E 13.55%, #00E8EB 148.77%, #8BFFFF 285.75%);
+  border: 1px solid rgba(245, 248, 252, 0.3);
+  border-radius: 51px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #F5F8FC;
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 30px;
+    display: none;
+  }
+}
+
+.carousel_layout {
+  @media screen and (min-width: 1279px) {
+    display: none;
+  }
+  //padding-bottom: 30px;
+}
+
+.carousel_content {
+  padding: 25px 30px 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: auto;
+  height: 215px;
+  background: rgba(34, 36, 57, 0.6);
+  border: 1px solid #36394C;
+  border-radius: 10px;
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: 1280px) {
+    text-align: center;
+  }
+}
+
+.next_button {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: solid #FFFFFF;
+  border-width: 0 1px 1px 0;
+  padding: 1px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.back_button {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: solid #FFFFFF;
+  border-width: 0 1px 1px 0;
+  padding: 1px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.sign_up_button_mobile {
+  display: block;
+  width: 175px;
+  height: 36px;
+  margin: 30px auto;
+  background: linear-gradient(105.88deg, #092C3E 13.55%, #00E8EB 148.77%, #8BFFFF 285.75%);
+  border: 1px solid rgba(245, 248, 252, 0.3);
+  border-radius: 51px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #F5F8FC;
+
+  @media screen and (min-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (max-width: $screen-phone-max){
+    width: 100%;
+  }
+}

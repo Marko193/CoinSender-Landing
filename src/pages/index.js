@@ -4,6 +4,9 @@ import { Header } from "@/components/Header/header";
 import { MultiTransactionSection } from "@/components/multi-transaction/multi-transaction";
 import { HowItWorks } from "@/components/How-it-works";
 import CoinSenderBenefits from "@/components/CoinSenderBenefits";
+import ReadyToStart from "@/components/ReadyToStart";
+import BackendProduct from "@/components/BackendProduct";
+
 import { Network } from "@/components/network/network";
 import { Roadmap } from "@/components/Roadmap/Roadmap";
 export default function Home() {
@@ -18,11 +21,13 @@ export default function Home() {
       <Header />
       <main>
         <MultiTransactionSection />
-        {/* <UserFriendlyFeatures /> */}
+        <UserFriendlyFeatures />
         <HowItWorks />
-        {/* <CoinSenderBenefits /> */}
+        <CoinSenderBenefits />
         <Network />
+        <ReadyToStart />
         <Roadmap />
+        <BackendProduct />
       </main>
     </>
   );

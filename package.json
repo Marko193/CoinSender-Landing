@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.13",
+    "@mui/styles": "^5.11.13",
     "next": "13.2.4",
     "node-sass": "^7.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "sass": "^1.59.2"
   }
 }
