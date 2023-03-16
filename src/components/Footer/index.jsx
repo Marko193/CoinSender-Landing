@@ -36,16 +36,16 @@ export default function Footer() {
                         ))}
                     </ul>
                 </div>
-                <div className={styles.footer__signup}>
-                </div>
-                <div
-                    onClick={() => setIsActive(!isActive)}
-                    className={`${styles.button_menu} ${isActive ? styles.active : ""}`}
-                >
-                    <span></span>
-                </div>
             </div>
-            <BurgerMenu isActive={isActive} setIsActive={setIsActive} items={items}/>
+            <div className={styles.icons_row}>
+               <img src='/assets/socials_icons/logo_twitter.svg' alt='social_icon'/>
+               <img src='/assets/socials_icons/logo_telegram.svg' alt='social_icon'/>
+               <img src='/assets/socials_icons/logo_discord.svg' alt='social_icon'/>
+               <img src='/assets/socials_icons/logo_instagram.svg' alt='social_icon'/>
+               <img src='/assets/socials_icons/logo_linkedin.svg' alt='social_icon'/>
+               <img src='/assets/socials_icons/logo_facebook.svg' alt='social_icon'/>
+               <img src='/assets/socials_icons/logo_youtube.svg' alt='social_icon'/>
+            </div>
         </footer>
     );
 }
