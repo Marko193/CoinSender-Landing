@@ -77,14 +77,14 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: $screen-phone-max) {
+  @media screen and (max-width: 400px){
     flex-wrap: wrap;
-    padding: 5px 15% 0 15%;
+    padding: 5px 10% 0 10%;
   }
 
-  @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+  @media screen and (min-width: 401px) and (max-width: $screen-tablet-max) {
     flex-wrap: wrap;
-    padding: 5px 20% 0 20%;
+    padding: 5px 15% 0 15%;
   }
 }
 
@@ -92,6 +92,10 @@
   display: block;
   margin: 0 auto;
   width: 242px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: auto;
+  }
 }
 
 .privacy_policy_layout {
@@ -102,6 +106,17 @@
   font-size: 14px;
   width: 242px;
   margin-top: 30px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    flex-direction: column;
+    width: auto;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #F5F8FC;
+    margin-top: 35px;
+  }
 
 }
 
@@ -115,6 +130,10 @@
   width: 5px;
   background-color: rgba(245, 248, 252, 0.9);
   border-radius: 50%;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    display: none;
+  }
 }
 
 .terms_of_use {
