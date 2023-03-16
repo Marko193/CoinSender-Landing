@@ -87,3 +87,36 @@
     padding: 5px 20% 0 20%;
   }
 }
+
+.privacy_policy_wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 242px;
+}
+
+.privacy_policy_layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+  width: 242px;
+  margin-top: 30px;
+
+}
+
+.privacy_policy {
+  cursor: pointer;
+}
+
+.dot {
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: rgba(245, 248, 252, 0.9);
+  border-radius: 50%;
+}
+
+.terms_of_use {
+  cursor: pointer;
+}

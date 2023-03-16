@@ -38,13 +38,20 @@ export default function Footer() {
                 </div>
             </div>
             <div className={styles.icons_row}>
-               <img src='/assets/socials_icons/logo_twitter.svg' alt='social_icon'/>
-               <img src='/assets/socials_icons/logo_telegram.svg' alt='social_icon'/>
-               <img src='/assets/socials_icons/logo_discord.svg' alt='social_icon'/>
-               <img src='/assets/socials_icons/logo_instagram.svg' alt='social_icon'/>
-               <img src='/assets/socials_icons/logo_linkedin.svg' alt='social_icon'/>
-               <img src='/assets/socials_icons/logo_facebook.svg' alt='social_icon'/>
-               <img src='/assets/socials_icons/logo_youtube.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_twitter.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_telegram.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_discord.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_instagram.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_linkedin.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_facebook.svg' alt='social_icon'/>
+                <img src='/assets/socials_icons/logo_youtube.svg' alt='social_icon'/>
+            </div>
+            <div className={styles.privacy_policy_wrapper}>
+                <div className={styles.privacy_policy_layout}>
+                    <div className={styles.privacy_policy}>Privacy policy</div>
+                    <span className={styles.dot}></span>
+                    <div className={styles.terms_of_use}>Terms of Use</div>
+                </div>
             </div>
         </footer>
     );
