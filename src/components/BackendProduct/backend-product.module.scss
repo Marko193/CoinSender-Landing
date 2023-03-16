@@ -55,7 +55,7 @@
   letter-spacing: -0.03em;
   color: #FFFFFF;
 
-  margin: 25px 25% 35px 25%;
+  margin: 25px 20% 35px 20%;
 
   @media screen and (max-width: $screen-desktop-max) {
     margin: 25px 0 0 0;;
@@ -159,6 +159,10 @@
   width: 130px;
   margin-left: 250px;
   margin-top: -50px;
+
+  @media screen and (max-width: $screen-desktop-max) {
+    display: none;
+  }
 }
 
 .four_avatar_layout {
