@@ -5,6 +5,7 @@ import {MultiTransactionSection} from "@/components/multi-transaction/multi-tran
 import {HowItWorks} from "@/components/How-it-works";
 import CoinSenderBenefits from "@/components/CoinSenderBenefits";
 import ReadyToStart from "@/components/ReadyToStart";
+import BackendProduct from "@/components/BackendProduct";
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
                 <HowItWorks/>
                 <CoinSenderBenefits/>
                 <ReadyToStart/>
+                <BackendProduct/>
             </main>
         </>
     );
