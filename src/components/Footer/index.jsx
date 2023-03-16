@@ -3,10 +3,10 @@ import {useState} from "react";
 import Image from "next/image";
 import Logo from "@/assets/images/logo-header.svg";
 import Link from "next/link";
-import {BurgerMenu} from "@/components/burger-menu/burger-menu";
+import { useRouter } from "next/router";
 
 export default function Footer() {
-    const [isActive, setIsActive] = useState(false);
+    const router = useRouter();
 
     const items = [
         {name: "Home", link: "#home"},
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
             <div className={styles.privacy_policy_wrapper}>
                 <div className={styles.privacy_policy_layout}>
-                    <div className={styles.privacy_policy}>Privacy policy</div>
+                    <div className={styles.privacy_policy} onClick={()=> router.push("/privacy_policy")}>Privacy policy</div>
                     <span className={styles.dot}></span>
                     <div className={styles.terms_of_use}>Terms of Use</div>
                 </div>
