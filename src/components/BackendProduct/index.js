@@ -32,12 +32,22 @@ export default function BackendProduct() {
                             <img src='/assets/mock_avatars/four.png' alt='avatar'/>
                         </div>
                     </div>
-                    <div className={styles.description}>
-                        CoinSender is backed by MeGaDev, a digital transformation business at the cutting edge of
-                        crypto.
-                        MeGaDev has well-established technical and management teams with a wealth of experience between
-                        them. The MeGaDev team is proud to contribute ground-breaking products that shape the future of
-                        crypto, including CoinSender.
+                    <div className={styles.general_description_wrapper}>
+                        <div className={styles.five_image_wrapper}>
+                            <img src='/assets/mock_avatars/five.png' alt='avatar'/>
+                        </div>
+                        <div className={styles.description}>
+                            CoinSender is backed by MeGaDev, a digital transformation business at the cutting edge of
+                            crypto.
+                            MeGaDev has well-established technical and management teams with a wealth of experience
+                            between
+                            them. The MeGaDev team is proud to contribute ground-breaking products that shape the future
+                            of
+                            crypto, including CoinSender.
+                        </div>
+                        <div className={styles.six_image_wrapper}>
+                            <img src='/assets/mock_avatars/six.png' alt='avatar'/>
+                        </div>
                     </div>
                     <button className={styles.discover_button}>Discover</button>
                 </div>
