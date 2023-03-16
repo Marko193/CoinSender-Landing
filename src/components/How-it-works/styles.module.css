@@ -11,12 +11,6 @@
   }
 }
 
-@media screen and (max-width: 468px) {
-  .section__container {
-    grid-template-columns: 1fr;
-  }
-}
-
 .block:last-child {
   display: flex;
   align-items: center;
@@ -60,10 +54,130 @@
 .block_title {
   margin-bottom: 12px;
   font-size: 20px;
+  text-align: left;
 }
 
 .block_description {
   line-height: 130%;
   color: rgba(245, 248, 252, 0.9);
   margin-bottom: 30px;
+  text-align: left;
+}
+
+.slider {
+  display: none;
+  position: relative;
+  height: 400px;
+  margin: 0 auto;
+  color: white;
+}
+
+.slides {
+  position: relative;
+  height: 100%;
+  white-space: pre-wrap;
+}
+
+.slide {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.try {
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  border: 1px solid #ffffff;
+}
+
+.dot.active {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.slider_button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.slider_button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 468px) {
+  .slider {
+    display: block;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .section__container {
+    display: none;
+  }
 }
