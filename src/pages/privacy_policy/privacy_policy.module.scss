@@ -1,0 +1,33 @@
+@import "./src/styles/breakpoints.scss";
+
+.main_wrapper {
+  margin: 60px 215px 0 108px;
+}
+
+.main_title {
+  height: 78px;
+  margin: 0 0 40px 50px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  color: #F5F8FC;
+}
+
+.blocks_info_wrapper {
+
+}
+
+.blocks_info_content {
+  padding: 50px 0 50px 50px;
+  background: rgba(34, 36, 57, 0.6);
+  border: 1px solid #36394C;
+  border-radius: 10px;
+  color: rgba(245, 248, 252, 0.9);
+}
+
+.block_title {
+  height: 62px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+}
