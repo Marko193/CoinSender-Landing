@@ -31,6 +31,10 @@ aside {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: "Altone Trial", sans-serif;
@@ -96,6 +100,7 @@ h6 {
   margin: 0 auto;
   padding: 0 16px;
   color: #f5f8fc;
+  overflow: hidden;
 }
 
 .button {
