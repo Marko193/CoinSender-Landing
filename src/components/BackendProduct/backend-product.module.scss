@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 10% 0 10%;
+  margin: 0 5% 0 5%;
 
   @include phones {
     margin: 0 7% 0 7%;
@@ -55,7 +55,7 @@
   letter-spacing: -0.03em;
   color: #FFFFFF;
 
-  margin: 25px 20% 35px 20%;
+  margin: 25px 25% 35px 25%;
 
   @media screen and (max-width: $screen-desktop-max) {
     margin: 25px 0 0 0;;
@@ -87,19 +87,16 @@
 .first_avatar_wrapper {
   width: 400px;
   margin: 0 auto;
-  //position: absolute;
 
   @media screen and (max-width: $screen-laptop-max) {
     display: none;
   }
 }
 
-//right-left animation
 .avatar_layout {
   position: relative;
   -webkit-animation: linear infinite;
-  animation: run 3s infinite;
-  //-webkit-animation-duration: 4s;
+  animation: run_first 3s infinite;
   width: 144px;
 }
 
@@ -112,8 +109,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //margin: 0 100px 0 100px;
-  width: auto;
+  width: 100%;
 
   @media screen and (max-width: $screen-laptop-max) {
     display: none;
@@ -125,18 +121,22 @@
   position: relative;
 }
 
+#second_wrapper {
+  width: 250px;
+}
+
 .second_animation_wrapper {
   width: 100px;
   position: relative;
   -webkit-animation: linear infinite;
-  animation: run 3s infinite;
+  animation: run_second 3s infinite;
 }
 
 .third_animation_wrapper {
   width: 100px;
   position: relative;
   -webkit-animation: linear infinite;
-  animation: run 3s infinite;
+  animation: run_third 3s infinite;
 }
 
 .second_avatar {
@@ -152,10 +152,30 @@
     width: 90px;
     height: 90px;
   }
-
 }
 
-@-webkit-keyframes run {
+.four_avatar_wrapper {
+  position: absolute;
+  width: 130px;
+  margin-left: 250px;
+  margin-top: -50px;
+}
+
+.four_avatar_layout {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  float: left;
+  -webkit-animation: linear infinite;
+  animation: run_reverse 3s infinite;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@-webkit-keyframes run_first {
   0% {
     left: 0;
   }
@@ -167,7 +187,7 @@
   }
 }
 
-@keyframes run {
+@keyframes run_first {
   0% {
     left: 0;
   }
@@ -179,7 +199,75 @@
   }
 }
 
-#second_third_avatars_wrapper {
-
+@-webkit-keyframes run_second {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 80px);
+  }
+  100% {
+    left: 0;
+  }
 }
 
+@keyframes run_second {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 80px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes run_third {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 90px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes run_third {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 90px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes run_reverse {
+  0% {
+    right: 0;
+  }
+  //add correct image width/here
+  50% {
+    right: calc(100% - 60px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes run_reverse {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 60px);
+  }
+  100% {
+    right: 0;
+  }
+}

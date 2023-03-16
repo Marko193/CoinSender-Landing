@@ -10,7 +10,7 @@ export default function BackendProduct() {
                     </div>
                 </div>
                 <div id={styles.second_third_avatars_wrapper}>
-                    <div className={styles.second_third_avatars}>
+                    <div className={styles.second_third_avatars} id={styles.second_wrapper}>
                         <div className={styles.second_animation_wrapper}>
                             <img src="/assets/mock_avatars/second.png" alt='avatar' className={styles.second_avatar}/>
                         </div>
@@ -26,6 +26,11 @@ export default function BackendProduct() {
                     <div className={styles.title}>
                         Backed by
                         <span className={styles.product_company_label}>Product Company</span>
+                    </div>
+                    <div className={styles.four_avatar_wrapper}>
+                        <div className={styles.four_avatar_layout}>
+                            <img src='/assets/mock_avatars/four.png' alt='avatar'/>
+                        </div>
                     </div>
                     <div className={styles.description}>
                         CoinSender is backed by MeGaDev, a digital transformation business at the cutting edge of
