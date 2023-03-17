@@ -8,7 +8,7 @@
   margin: 0 2% 0 2%;
 
   @include phones {
-    margin: 0 7% 0 7%;
+    //margin: 0 7% 0 7%;
   }
 
   @media screen and (min-width: 1921px) {
@@ -21,8 +21,6 @@
 }
 
 .title {
-  font-family: 'HK Guise', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 130%;
@@ -82,7 +80,7 @@
   margin: 25px 10% 35px 10%;
 
   @include phones {
-    margin: 25px 3% 0 3%;
+    margin-top: 25px;
   }
 
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-desktop-max) {
@@ -117,6 +115,7 @@
   margin: 0 auto;
 
   @media screen and (max-width: $screen-laptop-max) {
+    width: 100%;
     //display: none;
   }
 }
@@ -131,7 +130,7 @@
 #first_avatar {
   width: 144px;
   height: 144px;
-  
+
   @media screen and (max-width: $screen-laptop-max) {
     width: 73px;
     height: 73px;
@@ -146,6 +145,8 @@
 
   @media screen and (max-width: $screen-laptop-max) {
     //display: none;
+    flex-direction: column;
+    width: auto;
   }
 }
 
@@ -156,6 +157,12 @@
 
 #second_wrapper {
   width: 250px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    //width: 50%;
+    //background-color: red;
+    //display: none;
+  }
 }
 
 .second_animation_wrapper {
@@ -163,6 +170,10 @@
   position: relative;
   -webkit-animation: linear infinite;
   animation: run_second 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    padding-top: 30px;
+  }
 }
 
 .third_animation_wrapper {
@@ -170,6 +181,12 @@
   position: relative;
   -webkit-animation: linear infinite;
   animation: run_third 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    animation: run_third_reverse 3s infinite;
+    float: right;
+    padding-top: 10px;
+  }
 }
 
 .second_avatar {
@@ -180,11 +197,13 @@
     width: 32px;
     height: 32px;
   }
+
+
 }
 
 #third_avatar {
   width: 450px;
-  margin-right: 100px;
+  margin-left: 100px;
 
   img {
     width: 90px;
@@ -195,6 +214,12 @@
       height: 32px;
     }
   }
+
+  @media screen and (max-width: $screen-laptop-max) {
+    //margin-top: 50px;
+    //background-color: blue;
+    width: 80%;
+  }
 }
 
 .four_avatar_wrapper {
@@ -203,8 +228,13 @@
   margin-left: 250px;
   margin-top: -50px;
 
-  @media screen and (max-width: $screen-desktop-max) {
-    display: none;
+  @media screen and (max-width: $screen-laptop-max) {
+    margin-left: 80px;
+    margin-top: -80px;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) and (max-width: $screen-tv-min) {
+    margin-left: 200px;
   }
 }
 
@@ -219,6 +249,12 @@
   img {
     width: 60px;
     height: 60px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+      //display: none;
+      width: 21px;
+      height: 21px;
+    }
   }
 }
 
@@ -227,11 +263,11 @@
   display: grid;
   grid-template-columns: 250px auto 250px;
 
-  @media screen and (max-width: $screen-desktop-max) {
+  @media screen and (max-width: $screen-laptop-max) {
+    //display: block;
     //display: flex;
     //flex-direction: row;
     //justify-content: space-between;
-
   }
 }
 
@@ -245,6 +281,11 @@
     float: right;
     width: 90px;
     height: 90px;
+
+    @media screen and (max-width: $screen-phone-max) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   @media screen and (max-width: $screen-desktop-max) {
@@ -262,6 +303,11 @@
     float: left;
     width: 80px;
     height: 80px;
+
+    @media screen and (max-width: $screen-phone-max) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   @media screen and (max-width: $screen-desktop-max) {
@@ -341,11 +387,34 @@
   }
 }
 
+@-webkit-keyframes run_third_reverse {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes run_third_reverse {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
 @-webkit-keyframes run_reverse {
   0% {
     right: 0;
   }
-  //add correct image width/here
   50% {
     right: calc(100% - 60px);
   }
