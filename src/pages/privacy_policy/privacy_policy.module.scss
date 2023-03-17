@@ -47,7 +47,7 @@
 .blocks_info_content {
   color: rgba(245, 248, 252, 0.9);
 
-  @media screen and (min-width: $screen-desktop-max) and (max-width: 1600px){
+  @media screen and (min-width: $screen-desktop-max) and (max-width: 1600px) {
     width: 767px;
   }
 
@@ -76,5 +76,38 @@
   font-size: 16px;
   line-height: 130%;
   letter-spacing: -0.03em;
+}
 
+.list_block_wrapper {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115.5%;
+  letter-spacing: -0.03em;
+
+  color: rgba(245, 248, 252, 0.9);
+
+  @media screen and (min-width: $screen-desktop-max) and (max-width: 1600px) {
+    width: 767px;
+  }
+}
+
+.list_title {
+  margin-bottom: 20px;
+}
+
+.list_wrapper {
+
+}
+
+.list_content {
+  ul, li {
+    list-style: initial;
+  }
+  li {
+    margin-bottom: 20px;
+  }
+  //li {
+  //  list-style-type: circle;
+  //}
 }
