@@ -1,0 +1,141 @@
+@import "./src/styles/breakpoints.scss";
+
+.footer {
+  background: rgba(21, 37, 53, 0.42);
+  border-bottom: 1px solid #36394c;
+  color: #f5f8fc;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__signup {
+    display: none;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (min-width: $screen-laptop-max) and (max-width: $screen-desktop-max) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: $screen-laptop-max) {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  @media screen and (max-width: $screen-laptop-max) {
+    margin-top: 70px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  gap: 32px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #F5F8FC;
+
+    li {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: $screen-laptop-max) and (max-width: 1300px) {
+    gap: 16px;
+    font-size: 12px;
+  }
+}
+
+.footer__desktop_menu {
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 100%;
+  }
+}
+
+.icons_row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+
+  img {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 400px){
+    flex-wrap: wrap;
+    padding: 5px 10% 0 10%;
+  }
+
+  @media screen and (min-width: 401px) and (max-width: $screen-tablet-max) {
+    flex-wrap: wrap;
+    padding: 5px 15% 0 15%;
+  }
+}
+
+.privacy_policy_wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 242px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: auto;
+  }
+}
+
+.privacy_policy_layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+  width: 242px;
+  margin-top: 30px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    flex-direction: column;
+    width: auto;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #F5F8FC;
+    margin-top: 35px;
+  }
+
+}
+
+.privacy_policy {
+  cursor: pointer;
+}
+
+.dot {
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: rgba(245, 248, 252, 0.9);
+  border-radius: 50%;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    display: none;
+  }
+}
+
+.terms_of_use {
+  cursor: pointer;
+}
