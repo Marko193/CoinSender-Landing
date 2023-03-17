@@ -198,7 +198,7 @@
 
 .carousel_card_wrapper {
 
-  @include phones {
+  @media screen and (max-width: 1279px){
     margin: 0 8px auto;
   }
 }

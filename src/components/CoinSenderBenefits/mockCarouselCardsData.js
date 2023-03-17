@@ -2,7 +2,7 @@ export const data = [
     {
         id: 1,
         title: 'Wallet Integration',
-        description: "CoinSender uses funds allocated directly in your Web3 wallet, so you can easily send funds directly to your recipient's wallets."
+        description: "CoinSender uses funds allocated directly in your Web 3 wallet, so you can easily send funds directly to your recipient's wallets."
     },
     {
         id: 2,

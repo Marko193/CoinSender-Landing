@@ -43,7 +43,7 @@ export default function CoinSenderBenefits() {
                             <div className={styles.sub_block}>
                                 <div className={styles.title}>Wallet Integration</div>
                                 <div className={styles.description}>CoinSender uses funds allocated directly in your
-                                    Web3
+                                    Web 3
                                     wallet, so you can easily send funds directly to your recipient's wallets.
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ export default function CoinSenderBenefits() {
                                     securely stored on a blockchain-based platform.
                                 </div>
                             </div>
-                            <div className={styles.separator}/>
+                            <div className={styles.separator} style={{marginTop: '65px'}}/>
                         </div>
                         <div className={styles.block}>
                             <div className={styles.sub_block}>
@@ -78,7 +78,7 @@ export default function CoinSenderBenefits() {
                                     compliance with current cybersecurity standards.
                                 </div>
                             </div>
-                            <div className={styles.separator}/>
+                            <div className={styles.separator} style={{marginTop: '65px'}}/>
                         </div>
                     </div>
                     <div className={styles.content} id={styles.second_row}>
