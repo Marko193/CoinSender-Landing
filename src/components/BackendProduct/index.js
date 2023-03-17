@@ -36,7 +36,7 @@ export default function BackendProduct() {
                         <div className={styles.five_image_wrapper}>
                             <img src='/assets/mock_avatars/five.png' alt='avatar'/>
                         </div>
-                        <div className={styles.description}>
+                        <div className={styles.description_desktop}>
                             CoinSender is backed by MeGaDev, a digital transformation business at the cutting edge of
                             crypto.
                             MeGaDev has well-established technical and management teams with a wealth of experience
@@ -44,6 +44,10 @@ export default function BackendProduct() {
                             them. The MeGaDev team is proud to contribute ground-breaking products that shape the future
                             of
                             crypto, including CoinSender.
+                        </div>
+                        <div className={styles.description_mobile}>
+                            Sign up for CoinSender today and start enjoying the benefits of fast, secure, and
+                            hassle-free multi-transaction payments.
                         </div>
                         <div className={styles.six_image_wrapper}>
                             <img src='/assets/mock_avatars/six.png' alt='avatar'/>

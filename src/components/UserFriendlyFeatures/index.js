@@ -97,7 +97,6 @@ export default function UserFriendlyFeatures() {
           <div className={styles.sign_up}>
             <button className={styles.sign_up_button}>Sign up</button>
             <div className={styles.sign_up_description}>
-              {" "}
               Sign up for CoinSender today and experience the power of fast,
               secure, and easy multi-transaction payouts in cryptocurrency.
             </div>
