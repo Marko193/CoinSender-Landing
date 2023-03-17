@@ -1,0 +1,83 @@
+.form_container {
+  max-width: 600px;
+  background: #1d2235;
+  border: 1px solid #36394c;
+  box-shadow: 0px 80.6px 105.701px rgba(51, 51, 51, 0.1);
+  backdrop-filter: blur(4px);
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 40px 33px;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 36px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input,
+.form textarea {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 23px 36px;
+  background: #151628;
+  border-radius: 5px;
+  border: 1px solid #24293b;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.block_checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.block_checkbox div {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fixed {
+  width: 175px;
+  text-align: center;
+  margin-top: 36px;
+}
+
+@media screen and (max-width: 468px) {
+  .form_container {
+    padding: 30px 20px;
+  }
+  .form input,
+  .form textarea {
+    padding: 16px;
+  }
+
+  .fixed {
+    width: 100%;
+  }
+}
+
+.modal {
+}
+
+.modal_title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f5f8fc;
+}
+
+.modal_text {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(245, 248, 252, 0.9);
+}
