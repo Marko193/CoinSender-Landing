@@ -35,9 +35,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "myFont";
+  src: url("../assets/fonts/AltoneTrial-Regular.ttf") format("truetype");
+}
+
 html,
 body {
-  font-family: "Altone Trial", sans-serif;
+  // font-family: "Altone Trial", sans-serif;
+  font-family: "myFont";
   font-style: normal;
   height: 100%;
   width: 100%;
