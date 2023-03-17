@@ -76,9 +76,9 @@
     display: block;
     width: auto;
   }
-  
+
   //@media screen and () {
-    
+
   //}
 }
 
@@ -194,7 +194,13 @@
   @media screen and (min-width: 1279px) {
     display: none;
   }
-  //padding-bottom: 30px;
+}
+
+.carousel_card_wrapper {
+
+  @include phones {
+    margin: 0 8px auto;
+  }
 }
 
 .carousel_content {
@@ -251,7 +257,7 @@
     display: none;
   }
 
-  @media screen and (max-width: $screen-phone-max){
+  @media screen and (max-width: $screen-phone-max) {
     width: 100%;
   }
 }

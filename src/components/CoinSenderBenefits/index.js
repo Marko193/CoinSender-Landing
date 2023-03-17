@@ -134,14 +134,16 @@ export default function CoinSenderBenefits() {
                     onChangeIndex={handleStepChange}
                     enableMouseEvents
                 >
-                    {data.map((step, index) => (<div key={step.id}>
-                        {Math.abs(activeStep - index) <= 2 ? (<div
-                            className={styles.carousel_content}
-                        >
-                            <div className={styles.title}>{step.title}</div>
-                            <div className={styles.description}>{step.description}</div>
-                        </div>) : null}
-                    </div>))}
+                    {data.map((step, index) => (
+                        <div key={step.id} className={styles.carousel_card_wrapper}>
+                            {Math.abs(activeStep - index) <= 2 ? (<div
+                                className={styles.carousel_content}
+                            >
+                                <div className={styles.title}>{step.title}</div>
+                                <div className={styles.description}>{step.description}</div>
+                            </div>) : null}
+                        </div>
+                    ))}
                 </SwappableViews>
                 <MobileStepper
                     variant="dots"
