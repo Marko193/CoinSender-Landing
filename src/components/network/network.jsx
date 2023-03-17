@@ -93,34 +93,34 @@ export const Network = () => {
             }}
           >
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={Oasis} />
-              <Image src={Sol} />
-              <Image src={Dot} />
+              <Image src={Oasis} alt="" />
+              <Image src={Sol} alt="" />
+              <Image src={Dot} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
-              <Image src={CPolygon} />
-              <Image src={Colgate} />
-              <Image src={ETH} />
+              <Image src={CPolygon} alt="" />
+              <Image src={Colgate} alt="" />
+              <Image src={ETH} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={USDC} />
-              <Image src={USDT} />
-              <Image src={BCH} />
+              <Image src={USDC} alt="" />
+              <Image src={USDT} alt="" />
+              <Image src={BCH} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
-              <Image src={Matic} />
-              <Image src={BNB} />
-              <Image src={Romb} />
+              <Image src={Matic} alt="" />
+              <Image src={BNB} alt="" />
+              <Image src={Romb} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={Heco} />
-              <Image src={Bird} />
-              <Image src={XML} />
+              <Image src={Heco} alt="" />
+              <Image src={Bird} alt="" />
+              <Image src={XML} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
-              <Image src={Arrows} />
-              <Image src={HBar} />
-              <Image src={LTC} />
+              <Image src={Arrows} alt="" />
+              <Image src={HBar} alt="" />
+              <Image src={LTC} alt="" />
             </div>
           </div>
         </div>
@@ -175,34 +175,34 @@ export const Network = () => {
             }}
           >
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={APE} />
-              <Image src={BTC} />
-              <Image src={BUSD} />
+              <Image src={APE} alt="" />
+              <Image src={BTC} alt="" />
+              <Image src={BUSD} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
-              <Image src={SCIENCE} />
-              <Image src={LINK} />
-              <Image src={VET} />
+              <Image src={SCIENCE} alt="" />
+              <Image src={LINK} alt="" />
+              <Image src={VET} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={NEAR} />
-              <Image src={ADA} />
-              <Image src={AVAX} />
+              <Image src={NEAR} alt="" />
+              <Image src={ADA} alt="" />
+              <Image src={AVAX} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
-              <Image src={CELO} />
-              <Image src={RINGS} />
-              <Image src={OPPO} />
+              <Image src={CELO} alt="" />
+              <Image src={RINGS} alt="" />
+              <Image src={OPPO} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={XMR} />
-              <Image src={ETC} />
-              <Image src={MANA} />
+              <Image src={XMR} alt="" />
+              <Image src={ETC} alt="" />
+              <Image src={MANA} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
-              <Image src={Cya} />
-              <Image src={Opacha} />
-              <Image src={Kaplya} />
+              <Image src={Cya} alt="" />
+              <Image src={Opacha} alt="" />
+              <Image src={Kaplya} alt="" />
             </div>
           </div>
         </div>
@@ -226,28 +226,28 @@ export const Network = () => {
             <div className={styles.icons}>
               <div style={{ position: "relative" }}>
                 <div style={{ display: "flex", gap: "20px" }}>
-                  <Image src={Oasis} />
-                  <Image src={Sol} />
-                  <Image src={Dot} />
-                  <Image src={USDC} />
-                  <Image src={USDT} />
-                  <Image src={BCH} />
-                  <Image src={Heco} />
-                  <Image src={Bird} />
-                  <Image src={XML} />
+                  <Image src={Oasis} alt="" />
+                  <Image src={Sol} alt="" />
+                  <Image src={Dot} alt="" />
+                  <Image src={USDC} alt="" />
+                  <Image src={USDT} alt="" />
+                  <Image src={BCH} alt="" />
+                  <Image src={Heco} alt="" />
+                  <Image src={Bird} alt="" />
+                  <Image src={XML} alt="" />
                 </div>
                 <div
                   style={{ display: "flex", gap: "20px", marginLeft: "50px" }}
                 >
-                  <Image src={CPolygon} />
-                  <Image src={Colgate} />
-                  <Image src={ETH} />
-                  <Image src={Matic} />
-                  <Image src={BNB} />
-                  <Image src={Romb} />
-                  <Image src={Arrows} />
-                  <Image src={HBar} />
-                  <Image src={LTC} />
+                  <Image src={CPolygon} alt="" />
+                  <Image src={Colgate} alt="" />
+                  <Image src={ETH} alt="" />
+                  <Image src={Matic} alt="" />
+                  <Image src={BNB} alt="" />
+                  <Image src={Romb} alt="" />
+                  <Image src={Arrows} alt="" />
+                  <Image src={HBar} alt="" />
+                  <Image src={LTC} alt="" />
                 </div>
               </div>
             </div>
@@ -258,26 +258,26 @@ export const Network = () => {
             </div>
             <div className={styles.icons}>
               <div style={{ display: "flex", gap: "20px" }}>
-                <Image src={APE} />
-                <Image src={BTC} />
-                <Image src={BUSD} />
-                <Image src={SCIENCE} />
-                <Image src={LINK} />
-                <Image src={VET} />
-                <Image src={NEAR} />
-                <Image src={ADA} />
-                <Image src={AVAX} />
+                <Image src={APE} alt="" />
+                <Image src={BTC} alt="" />
+                <Image src={BUSD} alt="" />
+                <Image src={SCIENCE} alt="" />
+                <Image src={LINK} alt="" />
+                <Image src={VET} alt="" />
+                <Image src={NEAR} alt="" />
+                <Image src={ADA} alt="" />
+                <Image src={AVAX} alt="" />
               </div>
               <div style={{ display: "flex", gap: "20px", marginLeft: "50px" }}>
-                <Image src={CELO} />
-                <Image src={RINGS} />
-                <Image src={OPPO} />
-                <Image src={XMR} />
-                <Image src={ETC} />
-                <Image src={MANA} />
-                <Image src={Cya} />
-                <Image src={Opacha} />
-                <Image src={Kaplya} />
+                <Image src={CELO} alt="" />
+                <Image src={RINGS} alt="" />
+                <Image src={OPPO} alt="" />
+                <Image src={XMR} alt="" />
+                <Image src={ETC} alt="" />
+                <Image src={MANA} alt="" />
+                <Image src={Cya} alt="" />
+                <Image src={Opacha} alt="" />
+                <Image src={Kaplya} alt="" />
               </div>
             </div>
           </div>
@@ -290,9 +290,9 @@ export const Network = () => {
               CoinSender for sensible and efficient processing.
             </div>
             <div className={styles.wallet_icons}>
-              <Image src={WalletIcon1} />
-              <Image src={WalletIcon2} />
-              <Image src={WalletIcon3} />
+              <Image src={WalletIcon1} alt="" />
+              <Image src={WalletIcon2} alt="" />
+              <Image src={WalletIcon3} alt="" />
             </div>
           </div>
         </div>
