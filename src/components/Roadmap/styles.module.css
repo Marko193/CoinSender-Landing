@@ -1,3 +1,7 @@
+.roadmap {
+  display: block;
+}
+
 .title {
   font-size: 48px;
   font-weight: 700;
@@ -54,4 +58,115 @@
 
 .info_container {
   margin-left: 50px;
+}
+
+.slider {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  color: white;
+}
+
+.slides {
+  position: relative;
+  height: 100%;
+  white-space: pre-wrap;
+}
+
+.slide {
+  width: 100%;
+  height: fit-content;
+  display: inline-block;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  height: 1000px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  border: 1px solid #ffffff;
+}
+
+.dot.active {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.slider_button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.slider_button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.controls_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mobile_version {
+  display: none;
+}
+
+@media screen and (max-width: 468px) {
+  .mobile_version {
+    display: block;
+  }
+  .slider {
+    display: block;
+  }
+
+  .item_title {
+    margin-bottom: 0;
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    padding: 36px 16px;
+    border-radius: 0px;
+  }
+  .roadmap {
+    display: none;
+  }
 }

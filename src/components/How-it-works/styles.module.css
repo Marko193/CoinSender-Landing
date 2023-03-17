@@ -90,12 +90,6 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.try {
-  position: absolute;
-  top: 120%;
-  left: 0;
-}
-
 .slide.active {
   opacity: 1;
   z-index: 1;
@@ -159,6 +153,12 @@
   font-weight: 700;
   text-align: center;
   width: 100%;
+}
+
+.try {
+  position: absolute;
+  top: 120%;
+  left: 0;
 }
 
 @media screen and (max-width: 468px) {
