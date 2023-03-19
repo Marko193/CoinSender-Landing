@@ -31,29 +31,35 @@ export const ContactForm = () => {
         const handleOpen = () => setOpen(true);
         const handleClose = () => setOpen(false);
 
+        const [userName, setUserName] = useState('');
+        const [userEmail, setUserEmail] = useState('');
+        const [userMessage, setUserMessage] = useState('');
+
         const {
             sendEmail
         } = UseEmail("https://public.herotofu.com/v1/bccd0f80-c667-11ed-b4ac-77574673b9e5");
 
         const sendData = () => {
             sendEmail({
-                example_user: "user@example.com", example_data: new Date().toISOString(),
+                From: userEmail, User_name: userName, Message: userMessage, Date: new Date().toISOString(),
             });
         };
 
-        return (<section>
+        return (
+            <section>
                 <div className="container">
                     <div className={styles.title}>Contact us</div>
                     <div className={styles.form_container}>
                         <div className={styles.form}>
-                            <input type="text" placeholder="Jean Masad"/>
-                            <input type="text" placeholder="Email"/>
+                            <input type="text" placeholder="Jean Masad" onChange={() => setUserName(event.target.value)}/>
+                            <input type="text" placeholder="Email" onChange={() => setUserEmail(event.target.value)}/>
                             <textarea
                                 name=""
                                 placeholder="Message"
                                 id=""
                                 cols="30"
                                 rows="10"
+                                onChange={() => setUserMessage(event.target.value)}
                             ></textarea>
                             <div className={styles.block_checkbox}>
                                 <Checkbox

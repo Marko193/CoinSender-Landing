@@ -26,7 +26,6 @@ const UseEmail = (endpointUrl) => {
                 if (response.status !== 200) {
                     throw new Error(`${response.statusText} (${response.status})`);
                 }
-                console.log('response.json()', response.json())
                 return response.json();
             })
             .then(() => {
