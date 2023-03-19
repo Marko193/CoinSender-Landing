@@ -189,8 +189,6 @@
     width: 32px;
     height: 32px;
   }
-
-
 }
 
 #third_avatar {
@@ -208,8 +206,6 @@
   }
 
   @media screen and (max-width: $screen-laptop-max) {
-    //margin-top: 50px;
-    //background-color: blue;
     width: 80%;
   }
 }
@@ -299,6 +295,46 @@
   @media screen and (max-width: $screen-laptop-max) {
     display: none;
   }
+}
+
+.bottom_image_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  position: relative;
+}
+
+.bottom_image_container {
+  display: flex;
+  //background-color: red;
+  width: 100%;
+}
+
+.seven_image {
+  width: 55px;
+  height: 55px;
+  margin-top: 100px;
+  position: relative;
+  -webkit-animation: linear infinite;
+  animation: run_third 3s infinite;
+}
+
+.eight_image {
+  width: 59px;
+  height: 59px;
+  position: relative;
+  -webkit-animation: linear infinite;
+  animation: run_third 2s infinite;
+}
+
+.nine_image {
+  position: relative;
+  margin-top:50px;
+  width: 79px;
+  height: 79px;
+  -webkit-animation: linear infinite;
+  animation: run_reverse 3s infinite;
 }
 
 @-webkit-keyframes run_first {

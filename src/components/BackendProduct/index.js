@@ -54,6 +54,17 @@ export default function BackendProduct() {
                         </div>
                     </div>
                     <button className={styles.discover_button}>Discover</button>
+                    <div className={styles.bottom_image_wrapper}>
+                        <div className={styles.bottom_image_container}>
+                            <img className={styles.seven_image} src='/assets/mock_avatars/eight.png' alt='avatar'/>
+                        </div>
+                        <div className={styles.bottom_image_container}>
+                            <img className={styles.eight_image} src='/assets/mock_avatars/seven.png' alt='avatar'/>
+                        </div>
+                        <div className={styles.bottom_image_container} style={{justifyContent: 'end'}}>
+                            <img className={styles.nine_image} src='/assets/mock_avatars/nine.png' alt='avatar'/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
