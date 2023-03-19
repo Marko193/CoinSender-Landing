@@ -318,6 +318,12 @@
   position: relative;
   -webkit-animation: linear infinite;
   animation: run_third 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 40px;
+    height: 40px;
+    animation: eight_nine_mobile 3s infinite;
+  }
 }
 
 .eight_image {
@@ -326,6 +332,12 @@
   position: relative;
   -webkit-animation: linear infinite;
   animation: run_third 2s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 40px;
+    height: 40px;
+    animation: eight_nine_mobile 2s infinite;
+  }
 }
 
 .nine_image {
@@ -335,6 +347,12 @@
   height: 79px;
   -webkit-animation: linear infinite;
   animation: run_reverse 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 32px;
+    height: 32px;
+    animation: run_reverse_mobile 3s infinite;
+  }
 }
 
 @-webkit-keyframes run_first {
@@ -403,6 +421,30 @@
   }
   50% {
     left: calc(100% - 90px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes eight_nine_mobile {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 40px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes eight_nine_mobile {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 40px);
   }
   100% {
     left: 0;
@@ -503,5 +545,29 @@
   }
   100% {
     left: 0;
+  }
+}
+
+@-webkit-keyframes run_reverse_mobile {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes run_reverse_mobile {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
   }
 }
