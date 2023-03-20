@@ -12,7 +12,7 @@ export const BurgerMenu = ({ items, isActive, setIsActive }) => {
         <ul>
           {items.map(({ name, link }, index) => (
             <li key={index}>
-              <Link onClick={() => setIsActive(false)} href={link}>
+              <Link onClick={() => setIsActive(false)} href={"/" + link}>
                 {name}
               </Link>
             </li>

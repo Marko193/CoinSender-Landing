@@ -6,6 +6,10 @@ import empty from "../../assets/images/roadmap/empty.svg";
 import { useState } from "react";
 import ArrowLeft from "../../assets/images/how-it-works/left-arrow.svg";
 import ArrowRight from "../../assets/images/how-it-works/right-arrow.svg";
+import { useTheme } from "@mui/material/styles";
+import MobileStepper from "@mui/material/MobileStepper";
+import Button from "@mui/material/Button";
+import SwappableViews from "react-swipeable-views";
 
 const doneItems = [
   "Platform token launch",
@@ -50,30 +54,24 @@ const sliderItems = [
 ];
 
 export const Roadmap = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const theme = useTheme();
 
-  console.log(activeSlide);
+  const [activeStep, setActiveStep] = useState(0);
 
-  const handlePrevClick = () => {
-    setActiveSlide(
-      activeSlide === 0 ? sliderItems.length - 1 : activeSlide - 1
-    );
+  const handleNext = () => {
+    setActiveStep(activeStep === sliderItems.length - 1 ? 0 : activeStep + 1);
   };
 
-  const handleNextClick = () => {
-    setActiveSlide(
-      activeSlide === sliderItems.length - 1 ? 0 : activeSlide + 1
-    );
+  const handleBack = () => {
+    setActiveStep(activeStep === 0 ? sliderItems.length - 1 : activeStep - 1);
   };
 
-  const handleDotClick = (index) => {
-    setActiveSlide(index);
+  const handleStepChange = (step) => {
+    setActiveStep(step);
   };
-
-  const items = sliderItems[activeSlide];
 
   return (
-    <section>
+    <section id="roadmap">
       <div className={styles.roadmap + " container"}>
         <div>
           <div className={styles.info_container}>
@@ -143,40 +141,74 @@ export const Roadmap = () => {
       </div>
       <div>
         <div className={styles.mobile_version + " container"}>
-          <div className={styles.controls_title}>
-            <div className={styles.item_title}>{items.title}</div>
-            <div className={styles.controls}>
-              <Image src={ArrowLeft} onClick={handlePrevClick} />
-
-              <div className={styles.dots}>
-                {sliderItems.map((slide, index) => (
-                  <div
-                    key={slide}
-                    className={`${styles.dot} ${
-                      index === activeSlide ? styles.active : ""
-                    }`}
-                    onClick={() => handleDotClick(index)}
-                  />
-                ))}
-              </div>
-              <Image src={ArrowRight} onClick={handleNextClick} />
+          <div className={styles.title}>
+            Building the Future of Cryptocurrency Payments: Our Roadmap
+          </div>
+          <div className={styles.currentItem}>
+            <div className={styles.item_title}>
+              {sliderItems[activeStep].title}
+            </div>
+            <div>
+              <MobileStepper
+                variant="dots"
+                steps={sliderItems.length}
+                position="static"
+                className={styles.steps}
+                activeStep={activeStep}
+                style={{
+                  background: "transparent",
+                  padding: 0,
+                }}
+                sx={() => ({
+                  "& .MuiMobileStepper-dot": {
+                    border: "1px solid #FFFFFF",
+                    backgroundColor: "transparent",
+                    borderRadius: "10px",
+                  },
+                  "& .MuiMobileStepper-dotActive": {
+                    backgroundColor: "white",
+                  },
+                })}
+                nextButton={
+                  <Button onClick={handleNext}>
+                    <i className={styles.next_button} />
+                  </Button>
+                }
+                backButton={
+                  <Button onClick={handleBack}>
+                    <i className={styles.back_button} />
+                  </Button>
+                }
+              />
             </div>
           </div>
         </div>
-        <div className={styles.slider}>
-          <div className={styles.slides}>
-            <div className={`${styles.slide}`}>
-              <div className={styles.item}>
-                <div className={styles.items}>
-                  {items.items.map((slide) => (
-                    <div key={slide} className={styles.item_content}>
-                      <Image src={items.icon} />
-                      <div style={{ textAlign: "left" }}>{slide}</div>
+        <div>
+          <div className={styles.carousel_layout}>
+            <SwappableViews
+              axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+              index={activeStep}
+              onChangeIndex={handleStepChange}
+              enableMouseEvents
+            >
+              {sliderItems.map((step, index) => (
+                <>
+                  {Math.abs(activeStep - index) <= 2 ? (
+                    <div className={styles.item}>
+                      <div className={styles.items}>
+                        {step.items.map((item) => (
+                          <div key={item} className={styles.item_content}>
+                            <Image src={step.icon} />
+
+                            <div>{item}</div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+                  ) : null}
+                </>
+              ))}
+            </SwappableViews>
           </div>
         </div>
       </div>
