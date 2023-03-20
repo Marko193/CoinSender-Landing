@@ -1,0 +1,72 @@
+@import "./src/styles/breakpoints.scss";
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    display: block;
+    padding: 0 16px 0 16px;
+  }
+
+  //@media screen and (min-width: $screen-tv-min) {
+  //  width: 1225px;
+  //}
+}
+
+.title_description_block {
+
+  margin-top: 105px;
+  //background-color: green;
+  text-align: center;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    margin-top: 50px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    width: 909px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: #F5F8FC;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    font-size: 32px;
+  }
+}
+
+.description {
+  padding: 0 70px 0 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  color: rgba(245, 248, 252, 0.9);
+
+  @media screen and (max-width: $screen-tablet-max) {
+    padding: 0;
+  }
+}
+
+.accordions_layout {
+  margin-top: 55px;
+  //background-color: blue;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $screen-tv-min) {
+    width: 1225px;
+
+  }
+}
