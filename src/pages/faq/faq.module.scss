@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 95px;
 
   @media screen and (max-width: $screen-tablet-max) {
     display: block;
@@ -13,9 +14,7 @@
 }
 
 .title_description_block {
-
   margin-top: 105px;
-  //background-color: green;
   text-align: center;
 
   @media screen and (max-width: $screen-tablet-max) {
@@ -56,17 +55,23 @@
 .accordions_layout {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 55px;
-  //background-color: blue;
-  height: 500px;
 
   @media screen and (max-width: $screen-tablet-max) {
     margin-top: 30px;
   }
 
+  @media screen and (max-width: 1224px) {
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 1225px) {
     width: 1225px;
+  }
+
+  @media screen and (min-width: 1440px ){
+    justify-content: space-between;
   }
 }
 
@@ -77,9 +82,11 @@
 }
 
 .accordion_main_content {
+  margin-bottom: 35px;
   background: rgba(34, 36, 57, 0.6);
   border: 1px solid #36394C;
   border-radius: 13px;
+
 }
 
 .expand_more_icon {
@@ -90,6 +97,7 @@
   height: 100px;
   padding: 0 45px 0 30px;
   border-bottom: 1px solid #36394C;
+  border-radius: 13px;
 }
 
 .name_block_title {
@@ -117,8 +125,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  //display: flex;
-  //align-items: center;
   letter-spacing: -0.03em;
   color: rgba(245, 248, 252, 0.9);
 }
