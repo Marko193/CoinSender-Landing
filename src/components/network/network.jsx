@@ -74,7 +74,7 @@ export const Network = () => {
   };
 
   return (
-    <section>
+    <section id="pricing">
       <div className={styles.network_container}>
         <div>
           <div
@@ -256,7 +256,8 @@ export const Network = () => {
             <div className={styles.subtitle}>
               <div>In the testing process</div>
             </div>
-            <div className={styles.icons}>
+
+            <div className={styles.icons} style={{ paddingBottom: "60px" }}>
               <div style={{ display: "flex", gap: "20px" }}>
                 <Image src={APE} alt="" />
                 <Image src={BTC} alt="" />
@@ -279,6 +280,25 @@ export const Network = () => {
                 <Image src={Opacha} alt="" />
                 <Image src={Kaplya} alt="" />
               </div>
+              <div style={{ display: "flex", gap: "20px" }}>
+                <Image src={AVAX} alt="" />
+                <Image src={ADA} alt="" />
+                <Image src={NEAR} alt="" />
+                <Image src={VET} alt="" />
+                <Image src={LINK} alt="" />
+                <Image src={BUSD} alt="" />
+                <Image src={SCIENCE} alt="" />
+                <Image src={BTC} alt="" />
+                <Image src={APE} alt="" />
+              </div>
+            </div>
+            <div className="container">
+              <div
+                style={{
+                  borderBottom: "1px solid #36394b",
+                  marginBottom: "30px",
+                }}
+              ></div>
             </div>
           </div>
           <div className="container">

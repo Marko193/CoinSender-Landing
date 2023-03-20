@@ -7,6 +7,10 @@ import SignUp from "../../assets/images/how-it-works/signup.svg";
 import Track from "../../assets/images/how-it-works/track.svg";
 import ArrowLeft from "../../assets/images/how-it-works/left-arrow.svg";
 import ArrowRight from "../../assets/images/how-it-works/right-arrow.svg";
+import { useTheme } from "@mui/material/styles";
+import MobileStepper from "@mui/material/MobileStepper";
+import Button from "@mui/material/Button";
+import SwappableViews from "react-swipeable-views";
 import { useState } from "react";
 
 const items = [
@@ -55,6 +59,21 @@ const items = [
 export const HowItWorks = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = useState(0);
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleStepChange = (step) => {
+    setActiveStep(step);
+  };
+
   const handlePrevClick = () => {
     setActiveSlide(activeSlide === 0 ? items.length - 1 : activeSlide - 1);
   };
@@ -68,26 +87,45 @@ export const HowItWorks = () => {
   };
 
   return (
-    <section>
+    <section id="howitworks">
       <div className="container">
         <div className={styles.section_title}>
           <div className={styles.title}>How it works</div>
-          <div className={styles.controls}>
-            <Image src={ArrowLeft} onClick={handlePrevClick} />
-
-            <div className={styles.dots}>
-              {items.map((slide, index) => (
-                <div
-                  key={slide.id}
-                  className={`${styles.dot} ${
-                    index === activeSlide ? styles.active : ""
-                  }`}
-                  onClick={() => handleDotClick(index)}
-                />
-              ))}
-            </div>
-            <Image src={ArrowRight} onClick={handleNextClick} />
-          </div>
+          <MobileStepper
+            variant="dots"
+            steps={items.length}
+            className={styles.steps}
+            position="static"
+            activeStep={activeStep}
+            style={{
+              background: "transparent",
+              padding: 0,
+            }}
+            sx={() => ({
+              "& .MuiMobileStepper-dot": {
+                border: "1px solid #FFFFFF",
+                backgroundColor: "transparent",
+                borderRadius: "10px",
+              },
+              "& .MuiMobileStepper-dotActive": {
+                backgroundColor: "white",
+              },
+              display: { xs: "flex", sm: "none" },
+            })}
+            nextButton={
+              <Button
+                onClick={handleNext}
+                disabled={activeStep === items.length - 1}
+              >
+                <i className={styles.next_button} />
+              </Button>
+            }
+            backButton={
+              <Button onClick={handleBack} disabled={activeStep === 0}>
+                <i className={styles.back_button} />
+              </Button>
+            }
+          />
         </div>
         <div className={styles.section__container}>
           {items.map(({ icon, title, description }) => (
@@ -109,15 +147,16 @@ export const HowItWorks = () => {
             <button>Try now</button>
           </div>
         </div>
-        <div className={styles.slider}>
-          <div className={styles.slides}>
+
+        <div className={styles.carousel_layout}>
+          <SwappableViews
+            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+            index={activeStep}
+            onChangeIndex={handleStepChange}
+            enableMouseEvents
+          >
             {items.map((slide, index) => (
-              <div
-                key={slide.id}
-                className={`${styles.slide} ${
-                  index === activeSlide ? styles.active : ""
-                }`}
-              >
+              <div key={slide.id}>
                 <div className={styles.image_block}>
                   <Image src={slide.icon} alt="" />
                 </div>
@@ -133,9 +172,9 @@ export const HowItWorks = () => {
                 </div>
               </div>
             ))}
-            <button className={styles.try + " button"}>Try now</button>
-          </div>
+          </SwappableViews>
         </div>
+        <button className={styles.try + " button"}>Try now</button>
       </div>
     </section>
   );
