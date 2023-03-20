@@ -1,3 +1,9 @@
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {Header} from "@/components/Header/header";
 import Footer from "@/components/Footer";
 import styles from './faq.module.scss';
@@ -15,7 +21,44 @@ export default function FAQ() {
                     </div>
                 </div>
                 <div className={styles.accordions_layout}>
-                    CONTENT for accordions
+                    <div className={styles.accordion_column}>
+                        <Accordion className={styles.accordion_main_content}>
+                            <AccordionSummary
+                                expandIcon={
+                                    <ExpandMoreIcon className={styles.expand_more_icon}/>
+                                }
+                                className={styles.accordion_name_block}
+                            >
+                                <div className={styles.name_block_title}>What cryptocurrencies does <br/> CoinSender
+                                    support?
+                                </div>
+                            </AccordionSummary>
+                            <AccordionDetails classes={{root: styles.accordion_details_root}}>
+                                <div className={styles.details_content}>
+                                    CoinSender supports a wide range of popular cryptocurrencies, including Bitcoin,
+                                    Ethereum, and many others. Check out the platform for the full list of supported
+                                    cryptocurrencies.
+                                </div>
+                            </AccordionDetails>
+                        </Accordion>
+                    </div>
+                    <div className={styles.accordion_column}>
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon/>}
+                                aria-controls="panel1a-content"
+                                className={styles.accordion_name_block}
+                            >
+                                <Typography>Accordion 1</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </div>
                 </div>
             </div>
             <Footer/>

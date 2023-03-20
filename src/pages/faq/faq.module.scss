@@ -10,10 +10,6 @@
     display: block;
     padding: 0 16px 0 16px;
   }
-
-  //@media screen and (min-width: $screen-tv-min) {
-  //  width: 1225px;
-  //}
 }
 
 .title_description_block {
@@ -58,15 +54,71 @@
 }
 
 .accordions_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 55px;
   //background-color: blue;
+  height: 500px;
 
   @media screen and (max-width: $screen-tablet-max) {
     margin-top: 30px;
   }
 
-  @media screen and (min-width: $screen-tv-min) {
+  @media screen and (min-width: 1225px) {
     width: 1225px;
-
   }
+}
+
+.accordion_column {
+  @media screen and (min-width: 1225px) {
+    width: 595px;
+  }
+}
+
+.accordion_main_content {
+  background: rgba(34, 36, 57, 0.6);
+  border: 1px solid #36394C;
+  border-radius: 13px;
+}
+
+.expand_more_icon {
+  color: #FFFFFF;
+}
+
+.accordion_name_block {
+  height: 100px;
+  padding: 0 45px 0 30px;
+  border-bottom: 1px solid #36394C;
+}
+
+.name_block_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #F5F8FC;
+
+  @media screen and (min-width: $screen-tv-min) {
+    width: 400px;
+  }
+}
+
+.accordionRoot {
+
+}
+
+.accordion_details_root {
+  height: 140px;
+  padding: 0;
+}
+
+.details_content {
+  padding: 30px 30px 0 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  //display: flex;
+  //align-items: center;
+  letter-spacing: -0.03em;
+  color: rgba(245, 248, 252, 0.9);
 }
