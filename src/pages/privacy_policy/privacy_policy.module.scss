@@ -47,10 +47,6 @@
 .blocks_info_content {
   color: rgba(245, 248, 252, 0.9);
 
-  @media screen and (min-width: $screen-desktop-max) and (max-width: 1600px) {
-    width: 767px;
-  }
-
   @media screen and (min-width: 1921px) {
     width: 80%
   }
@@ -76,6 +72,10 @@
   font-size: 16px;
   line-height: 130%;
   letter-spacing: -0.03em;
+
+  @media screen and (min-width: $screen-desktop-max) and (max-width: 1600px) {
+    width: 767px;
+  }
 }
 
 .list_block_wrapper {

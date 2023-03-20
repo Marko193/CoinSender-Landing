@@ -86,6 +86,34 @@ export default function PrivacyPolicy() {
                         </ul>
                     </div>
                 </div>
+                <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.block_title}>
+                            <p>Personal Data we collect from you</p>
+                        </div>
+                        <div className={styles.text_block}>
+                            We collect the Personal Data of our employees, potential employees, clients, suppliers,
+                            business contacts, shareholders and website users. If the data we collect is not listed in
+                            this privacy statement, we will give data subjects (when required by law) a notice
+                            describing the data which will be collected and how it will be used. Except for certain
+                            information required by law, your decision to provide any personal data to us is voluntary.
+                        </div>
+                        <div className={styles.text_block}>
+                            If you provide us with Personal Data from a third party, you are held responsible for making
+                            this person aware of the information contained in this privacy statement and getting his/her
+                            consent for sharing the information with CoinSender. You must make sure to obtain and
+                            process personal data according to all applicable data protection laws.
+                        </div>
+                        <div className={styles.text_block}>
+                            We collect your Personal Data when you provide us with data via the contact form on the
+                            Website (i.e. name, phone, email). We may also collect some Personal Data automatically
+                            (e.g. your IP address, browser type and version, information about your visit including the
+                            URL clickstream to, through and from our Website, web pages you viewed or searched for,
+                            length of visits to certain web pages, web page interaction etc.) through the use of
+                            tracking technologies including cookies (see Section 6).
+                        </div>
+                    </div>
+                </div>
             </div>
             <Footer/>
         </>
