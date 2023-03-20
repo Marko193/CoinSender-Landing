@@ -40,7 +40,7 @@
   }
 
   @media screen and (min-width: $screen-tv-min) {
-    padding: 50px 158px 50px 50px;
+    padding: 50px 40px 50px 50px;
   }
 }
 
@@ -53,6 +53,7 @@
 }
 
 .block_title {
+  color: rgba(245, 248, 252, 0.9);
   font-weight: 700;
   font-size: 48px;
   line-height: 130%;
