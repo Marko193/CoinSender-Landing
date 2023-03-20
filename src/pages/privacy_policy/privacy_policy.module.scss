@@ -101,12 +101,17 @@
 }
 
 .list_content {
-  ul, li {
+  margin-left: 25px;
+
+  li {
     list-style: initial;
   }
+
+
   li {
     margin-bottom: 20px;
   }
+
   //li {
   //  list-style-type: circle;
   //}

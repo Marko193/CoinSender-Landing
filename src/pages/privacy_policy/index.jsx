@@ -43,29 +43,45 @@ export default function PrivacyPolicy() {
                     </div>
                     <div className={styles.list_block_wrapper}>
                         <div className={styles.list_title}>
-                            As a Data Subject, applicable data protection laws entitle you to:
+                            This policy is based on the following data protection principles:
                         </div>
                         <ul className={styles.list_content}>
-                            <li>
-                                Request information on your Personal Data processed by us. This right entitles you to
-                                know if we hold your Personal Data and if we do, to obtain a copy of your Personal Data.
+                            <li>The processing of personal data shall take place in a lawful, fair and transparent
+                                way;
                             </li>
-                            <li>
-                                Request the right to access the Personal Data we have on you. Request the rectification
-                                of your Personal Data if applicable. This right entitles you to have your Personal Data
-                                corrected if it is inaccurate or incomplete. The Right to object to the processing of
-                                your Personal Data. This right entitles you to request that CoinSender no longer
-                                processes your Personal Data. Request the erasure of your Personal Data. This right
-                                entitles you to request the erasure of your Personal Data and the right to be forgotten
-                                by CoinSender. Request the restriction of the processing of your Personal Data on
-                                legitimate grounds. This right entitles you to request that your Personal Data be
-                                processed in limited circumstances and only with your consent.
+
+                            <li>The collecting of personal data shall only be performed for specified, explicit and
+                                legitimate purposes and not further processed in a manner that is incompatible with
+                                those purposes;
                             </li>
-                            <li>
-                                The right to complain to a supervisory authority if applicable at any time.
+
+                            <li>The collecting of personal data shall be adequate, relevant and limited to what is
+                                necessary in relation to the purpose for which they are processed;
                             </li>
-                            <li>
-                                Request to withdraw your consent at any time. Request the portability of your
+
+                            <li>The personal data shall be accurate and where necessary, kept up to date;</li>
+
+                            <li>Every reasonable step shall be taken to ensure that personal data that are inaccurate
+                                having regard to the purposes for which they are processed, are erased or rectified
+                                without delay;
+                            </li>
+
+                            <li>Personal data shall be kept in a form which permits identification of the data subject
+                                for no longer than it is necessary for the purpose for which the personal data are
+                                processed;
+                            </li>
+
+                            <li> All personal data shall be kept confidential and stored in a manner that ensures
+                                appropriate security;
+                            </li>
+
+                            <li>Personal data shall not be shared with third parties except when necessary in order for
+                                them to provide services upon agreement;
+                            </li>
+
+                            <li> Data subjects shall have the right to request access to and rectification or erasure of
+                                personal data, or restriction of processing, or to object to processing as well as the
+                                right of data portability.
                             </li>
                         </ul>
                     </div>
