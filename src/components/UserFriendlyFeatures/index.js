@@ -3,8 +3,8 @@ import TitleDescriptionHelper from "@/components/TitleDescHelper";
 
 export default function UserFriendlyFeatures() {
   return (
-    <section>
-      <div id="features" className={styles.wrapper_content}>
+    <section id="features">
+      <div className={styles.wrapper_content}>
         <TitleDescriptionHelper
           title="User-friendly features that will unlock your workflow potential."
           description=" With CoinSender, you can easily distribute tokens and make multi-transaction payouts in cryptocurrency hassle-free. Our platform is designed specifically to make the process fast, secure, and efficient. Here s what you can expect when you sign up for CoinSender:"
@@ -100,7 +100,6 @@ export default function UserFriendlyFeatures() {
             <div className={styles.sign_up}>
               <button className={styles.sign_up_button}>Sign up</button>
               <div className={styles.sign_up_description}>
-                {" "}
                 Sign up for CoinSender today and experience the power of fast,
                 secure, and easy multi-transaction payouts in cryptocurrency.
               </div>

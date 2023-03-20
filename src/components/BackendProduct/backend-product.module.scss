@@ -8,7 +8,7 @@
   margin: 0 2% 0 2%;
 
   @include phones {
-    margin: 0 7% 0 7%;
+    //margin: 0 7% 0 7%;
   }
 
   @media screen and (min-width: 1921px) {
@@ -21,8 +21,6 @@
 }
 
 .title {
-  font-family: 'HK Guise', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 130%;
@@ -43,9 +41,7 @@
   color: #8BFFFF
 }
 
-.description {
-  font-family: 'HK Guise', sans-serif;
-  font-style: normal;
+.description_desktop {
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
@@ -66,8 +62,29 @@
     margin: 25px 6% 0 6%;
   }
 
-  @media screen and (min-width: 1921px) {
-    //margin: 25px 30% 35px 30%;
+  @media screen and (max-width: $screen-laptop-max) {
+    display: none;
+  }
+}
+
+.description_mobile {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+
+  margin: 25px 10% 35px 10%;
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-desktop-max) {
+    margin: 25px 10% 0 10%;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    display: none;
   }
 }
 
@@ -84,7 +101,11 @@
   color: #F5F8FC;
 
   @media screen and (max-width: $screen-tablet-min) {
-    width: 100%;
+    width: 193px;
+  }
+
+  @include phones {
+    margin-top: 0;
   }
 }
 
@@ -94,7 +115,7 @@
   margin: 0 auto;
 
   @media screen and (max-width: $screen-laptop-max) {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -108,6 +129,11 @@
 #first_avatar {
   width: 144px;
   height: 144px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 73px;
+    height: 73px;
+  }
 }
 
 #second_third_avatars_wrapper {
@@ -117,7 +143,8 @@
   width: 100%;
 
   @media screen and (max-width: $screen-laptop-max) {
-    display: none;
+    flex-direction: column;
+    width: auto;
   }
 }
 
@@ -135,6 +162,10 @@
   position: relative;
   -webkit-animation: linear infinite;
   animation: run_second 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    padding-top: 30px;
+  }
 }
 
 .third_animation_wrapper {
@@ -142,20 +173,40 @@
   position: relative;
   -webkit-animation: linear infinite;
   animation: run_third 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    animation: run_third_reverse 3s infinite;
+    float: right;
+    padding-top: 10px;
+  }
 }
 
 .second_avatar {
   width: 80px;
   height: 80px;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 #third_avatar {
   width: 450px;
-  margin-right: 100px;
+  margin-left: 100px;
 
   img {
     width: 90px;
     height: 90px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 80%;
   }
 }
 
@@ -165,8 +216,13 @@
   margin-left: 250px;
   margin-top: -50px;
 
-  @media screen and (max-width: $screen-desktop-max) {
-    display: none;
+  @media screen and (max-width: $screen-laptop-max) {
+    margin-left: 80px;
+    margin-top: -80px;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) and (max-width: $screen-tv-min) {
+    margin-left: 150px;
   }
 }
 
@@ -181,19 +237,19 @@
   img {
     width: 60px;
     height: 60px;
+
+    @media screen and (max-width: $screen-laptop-max) {
+      width: 21px;
+      height: 21px;
+    }
   }
 }
 
 .general_description_wrapper {
 
-  display: grid;
-  grid-template-columns: 250px auto 250px;
-
-  @media screen and (max-width: $screen-desktop-max) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+  @media screen and (min-width: $screen-desktop-min) {
+    display: grid;
+    grid-template-columns: 250px auto 250px;
   }
 }
 
@@ -203,14 +259,19 @@
   -webkit-animation: linear infinite;
   animation: run_reverse_second 3s infinite;
 
+  @media screen and (max-width: $screen-laptop-max) {
+    display: none;
+  }
+
   img {
     float: right;
     width: 90px;
     height: 90px;
-  }
 
-  @media screen and (max-width: $screen-desktop-max) {
-    display: none;
+    @media screen and (max-width: $screen-phone-max) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -224,10 +285,73 @@
     float: left;
     width: 80px;
     height: 80px;
+
+    @media screen and (max-width: $screen-phone-max) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
-  @media screen and (max-width: $screen-desktop-max) {
+  @media screen and (max-width: $screen-laptop-max) {
     display: none;
+  }
+}
+
+.bottom_image_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  position: relative;
+}
+
+.bottom_image_container {
+  display: flex;
+  //background-color: red;
+  width: 100%;
+}
+
+.seven_image {
+  width: 55px;
+  height: 55px;
+  margin-top: 100px;
+  position: relative;
+  -webkit-animation: linear infinite;
+  animation: run_third 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 40px;
+    height: 40px;
+    animation: eight_nine_mobile 3s infinite;
+  }
+}
+
+.eight_image {
+  width: 59px;
+  height: 59px;
+  position: relative;
+  -webkit-animation: linear infinite;
+  animation: run_third 2s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 40px;
+    height: 40px;
+    animation: eight_nine_mobile 2s infinite;
+  }
+}
+
+.nine_image {
+  position: relative;
+  margin-top:50px;
+  width: 79px;
+  height: 79px;
+  -webkit-animation: linear infinite;
+  animation: run_reverse 3s infinite;
+
+  @media screen and (max-width: $screen-laptop-max) {
+    width: 32px;
+    height: 32px;
+    animation: run_reverse_mobile 3s infinite;
   }
 }
 
@@ -303,11 +427,58 @@
   }
 }
 
+@-webkit-keyframes eight_nine_mobile {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 40px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes eight_nine_mobile {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 40px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes run_third_reverse {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes run_third_reverse {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
 @-webkit-keyframes run_reverse {
   0% {
     right: 0;
   }
-  //add correct image width/here
   50% {
     right: calc(100% - 60px);
   }
@@ -374,5 +545,29 @@
   }
   100% {
     left: 0;
+  }
+}
+
+@-webkit-keyframes run_reverse_mobile {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes run_reverse_mobile {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: calc(100% - 32px);
+  }
+  100% {
+    right: 0;
   }
 }

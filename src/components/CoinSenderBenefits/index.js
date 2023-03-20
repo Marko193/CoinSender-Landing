@@ -45,7 +45,7 @@ export default function CoinSenderBenefits() {
                 <div className={styles.sub_block}>
                   <div className={styles.title}>Wallet Integration</div>
                   <div className={styles.description}>
-                    CoinSender uses funds allocated directly in your Web3
+                    CoinSender uses funds allocated directly in your Web 3
                     wallet, so you can easily send funds directly to your
                     recipient's wallets.
                   </div>
@@ -75,7 +75,10 @@ export default function CoinSenderBenefits() {
                     blockchain-based platform.
                   </div>
                 </div>
-                <div className={styles.separator} />
+                <div
+                  className={styles.separator}
+                  style={{ marginTop: "65px" }}
+                />
               </div>
               <div className={styles.block}>
                 <div className={styles.sub_block}>
@@ -86,7 +89,10 @@ export default function CoinSenderBenefits() {
                     cybersecurity standards.
                   </div>
                 </div>
-                <div className={styles.separator} />
+                <div
+                  className={styles.separator}
+                  style={{ marginTop: "65px" }}
+                />
               </div>
             </div>
             <div className={styles.content} id={styles.second_row}>
@@ -143,7 +149,7 @@ export default function CoinSenderBenefits() {
             enableMouseEvents
           >
             {data.map((step, index) => (
-              <div key={step.id}>
+              <div key={step.id} className={styles.carousel_card_wrapper}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <div className={styles.carousel_content}>
                     <div className={styles.title}>{step.title}</div>
