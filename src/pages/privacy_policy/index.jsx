@@ -1,6 +1,7 @@
 import {Header} from "@/components/Header/header";
 import Footer from "@/components/Footer";
 import styles from './privacy_policy.module.scss'
+import {ContactForm} from "@/components/contact/contact";
 
 export default function PrivacyPolicy() {
     return (
@@ -349,7 +350,6 @@ export default function PrivacyPolicy() {
                         </div>
                     </div>
                 </div>
-
                 <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
                     <div className={styles.blocks_info_content}>
                         <div className={styles.block_title}>
@@ -363,7 +363,6 @@ export default function PrivacyPolicy() {
                         </div>
                     </div>
                 </div>
-
                 <div className={styles.blocks_info_wrapper}>
                     <div className={styles.block_title}>
                         <p>Contact information</p>
@@ -373,10 +372,172 @@ export default function PrivacyPolicy() {
                             If at any time you would like to contact us with your views about our privacy practices, or
                             with any inquiry relating to your Personal Data, and or your rights as a Data Subject, you
                             can do so by using our contact from on each web page of our Website, or by sending us an
-                            email at: <a href='https://support@coinsender.io' target="_blank"> https://support@coinsender.io</a>
+                            email at: <a href='https://support@coinsender.io'
+                                         target="_blank"> https://support@coinsender.io</a>
                         </div>
                     </div>
                 </div>
+                <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.block_title}>
+                            <p>Cookie policy</p>
+                        </div>
+                        <div className={styles.text_block}>
+                            This Cookie Policy page explains how CoinSender and its subsidiaries (hereinafter referred
+                            to as: the “Company” ‘we’, ‘us’, ‘our’, or CoinSender) use cookies, what kind of data we
+                            collect, and why we collect such data.
+                        </div>
+                        <div className={styles.text_block}>
+                            CoinSender takes great care of your privacy and allows browsing most of our web pages
+                            without asking you to share any personal information. However, we still need it to
+                            personalize your experience and course-correct our marketing activities to provide you with
+                            the best user experience.
+                        </div>
+                        <div className={styles.text_block}>
+                            Our Website: https://coinsender.io/ ( hereinafter referred to as: the ‘Website’) and any
+                            other branded web pages, websites, or third-party platforms owned or managed by CoinSender
+                            (hereinafter referred to as: CoinSender Websites’), all function according to this Cookie
+                            Policy.
+                        </div>
+                        <div className={styles.text_block}>
+                            By navigating CoinSender Websites, you accept the use of the cookies we collect. CoinSender
+                            keeps the right to edit this Cookie Policy in part or in whole at any time.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper}>
+                    <div className={styles.block_title}>
+                        <p>What are Cookies</p>
+                    </div>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.text_block}>
+                            Cookies are small text files that are placed on your computer or mobile device when you
+                            access websites on the internet. Cookies help Users navigate around our website and allow us
+                            to tailor the content of our site to fit the needs and preferences of Users. The cookies we
+                            use typically collect anonymous identifiers associated with your device, browser, referring
+                            site URLs, time or usage information, Website preferences and settings, etc. (as further
+                            provided in this Policy).
+                        </div>
+                        <div className={styles.text_block}>
+                            Cookies play an important role. Without them, using our website would be a slow, complicated
+                            and frustrating experience. Cookies are standard to all company websites. So while they
+                            cannot be eliminated, CoinSender remains transparent about the purpose of cookies giving you
+                            the choice to consent to their use.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.block_title}>
+                            <p>Why Does CoinSender use Cookies and similar technologies</p>
+                        </div>
+                        <div className={styles.text_block}>
+                            CoinSender takes advantage of the information collected via cookies and similar technologies
+                            like web beacons (embedded bits of data into targeted emails or images to keep record of
+                            your actions on a web page or email body) to recognize you, improve page navigation,
+                            remember your preferences, and show you relevant content. It also helps us enhance email and
+                            advertising campaigns, and allows us to refine our marketing strategy.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper}>
+                    <div className={styles.block_title}>
+                        <p>What types of Cookies are used by CoinSender?</p>
+                    </div>
+                    <div className={styles.list_block_wrapper}>
+                        <div className={styles.list_title}>
+                            CoinSender makes use of various cookies including the following:
+                        </div>
+                        <ul className={styles.list_content}>
+                            <li>Strictly necessary cookies to ensure the information you access via CoinSender Websites
+                                is properly browsed and all the CoinSender Websites function properly.
+                            </li>
+
+                            <li>Performance cookies to keep a record of the CoinSender Website pages you visited and
+                                URLs that brought you to CoinSender Websites.
+                            </li>
+
+                            <li>Website session cookies to keep track of your actions during a browser session. The
+                                session starts the moment you access a CoinSender Website and ends right after you exit
+                                the CoinSender Website. When you close the browser, our session cookies are
+                                automatically deleted.
+                            </li>
+
+                            <li>Targeting cookies to accumulate analytics about CoinSender Websites usage as well as
+                                third-party cookies we get via social media channels or ads placed on third-party
+                                platforms.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.block_title}>
+                            <p>What third-party cookies does CoinSender collect?</p>
+                        </div>
+                        <div className={styles.text_block}>
+                            Please also note that CoinSender may enable third-party services to trace Performance and
+                            Targeting cookies for us to measure the effectiveness of our advertising campaigns and stay
+                            informed about your online activities on CoinSender’s Websites. The third-party services may
+                            include but not be limited to Google AdWords, Google Analytics, etc., and may be subject to
+                            their Cookie policies, which are listed on their applicable websites.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper}>
+                    <div className={styles.block_title}>
+                        <p>Who can access the data collected by CoinSender?</p>
+                    </div>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.text_block}>
+                            CoinSender is the only holder of the data gathered. It is kept confidential and safe under
+                            the regulations described in our Privacy Policy page in the Security subsection.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.block_title}>
+                            <p>What personal data do we gather?</p>
+                        </div>
+                        <div className={styles.text_block}>
+                            For further information, please refer to our Privacy Policy page, in the Section relating
+                            to: Personal Data We Collect from You Privacy Policy.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper}>
+                    <div className={styles.block_title}>
+                        <p>How to block CoinSender Websites’ cookies?</p>
+                    </div>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.text_block}>
+                            If you want to remove all the existing and future CoinSender Websites cookies, you can do
+                            this at anytime by changing your browser settings. For more guidance, please go to
+                            www.allaboutcookies.org.
+                        </div>
+                        <div className={styles.text_block}>
+                            Please note: Blocking the cookies will negatively affect your experience and navigation on
+                            CoinSender Websites. Unless you block cookies in your browser before accessing CoinSender
+                            Websites, we will place cookies on your computer or devices once you visit CoinSender
+                            Websites or click the links leading to them.
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.blocks_info_wrapper} style={{background: "none", border: "none"}}>
+                    <div className={styles.blocks_info_content}>
+                        <div className={styles.block_title}>
+                            <p>Contact information</p>
+                        </div>
+                        <div className={styles.text_block}>
+                            Should you have any concerns about our Cookie Policy or would like us to remove the data
+                            shared, please get in touch with us either via the Website contact form or this email:
+                            support@coinsender.io.
+                        </div>
+                    </div>
+                </div>
+                <ContactForm />
             </div>
             <Footer/>
         </>
