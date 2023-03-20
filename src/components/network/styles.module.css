@@ -36,6 +36,7 @@
   font-size: 18px;
   max-width: 533px;
   margin: 0 auto;
+  line-height: 130%;
 }
 .network_details {
   display: flex;
@@ -80,27 +81,6 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .mobile_container {
-    display: block;
-    color: white;
-  }
-  .network_container {
-    display: none;
-  }
-  .title {
-    font-size: 26px;
-  }
-  .section_description {
-    margin-bottom: 50px;
-    font-size: 16px;
-  }
-  .wallet_icons img {
-    width: 67px;
-    height: 67px;
-  }
-}
-
 .subtitle {
   font-weight: 700;
   text-align: center;
@@ -131,6 +111,32 @@
 .icons::-webkit-scrollbar {
   width: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .mobile_container {
+    display: block;
+    color: white;
+  }
+  .network_container {
+    display: none;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .section_description {
+    margin-bottom: 50px;
+    font-size: 16px;
+    max-width: 328px;
+  }
+  .wallet_icons img {
+    width: 67px;
+    height: 67px;
+  }
+  .icons {
+    margin-bottom: 0;
+  }
+}
+
 /* 
 @keyframes scroll {
   0% {

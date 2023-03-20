@@ -23,13 +23,15 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__container + " container"}>
         <div>
-          <Image src={Logo} alt="" />
+          <Link href="/">
+            <Image src={Logo} alt="" />
+          </Link>
         </div>
         <div className={styles.header__desktop_menu}>
           <ul className={styles.header__nav}>
             {items.map(({ name, link }, index) => (
               <li key={index}>
-                <Link href={link}>{name}</Link>
+                <Link href={"/" + link}>{name}</Link>
               </li>
             ))}
           </ul>

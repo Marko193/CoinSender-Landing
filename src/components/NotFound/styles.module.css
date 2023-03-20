@@ -1,0 +1,163 @@
+.network_container {
+  height: 91vh;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+}
+
+.arrows_text {
+  font-size: 16px;
+  width: 200px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.arrows_text:first-child {
+  text-align: right;
+}
+.arrows_text:last-child {
+  text-align: left;
+}
+
+.section_description {
+  text-align: center;
+  font-size: 18px;
+  max-width: 533px;
+  margin: 0 auto;
+  line-height: 130%;
+}
+.network_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  width: 80%;
+  transition: all 0.5s ease-in-out;
+}
+
+.wallet_icons {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 37px;
+}
+
+.network_container > div:nth-child(1),
+.network_container > div:nth-child(3) {
+  flex: 1;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.network_container > div:nth-child(1) > div {
+  position: absolute;
+  right: -150px;
+  transition: all 0.5s ease-in-out;
+}
+
+.network_container > div:nth-child(3) > div {
+  position: absolute;
+  left: -150px;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile_container {
+  display: block;
+}
+
+.subtitle {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.icons img {
+  width: 89px;
+  height: 89px;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 60px;
+  overflow-x: scroll;
+}
+
+.icons div {
+  display: inline-block;
+  /* padding-left: 100%; */
+  /* animation: scroll 25s infinite linear; */
+}
+
+.icons::-webkit-scrollbar {
+  width: 0;
+}
+
+.hide {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile_container {
+    display: block;
+    color: white;
+  }
+  .network_container {
+    display: block;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .section_description {
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+  .wallet_icons img {
+    width: 67px;
+    height: 67px;
+  }
+  .icons {
+    margin-bottom: 0;
+  }
+  .network_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .network_container > div:nth-child(1) > div {
+    display: none;
+  }
+
+  .network_container > div:nth-child(3) > div {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+/* 
+  @keyframes scroll {
+    0% {
+      transform: translate(-100%, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  } */

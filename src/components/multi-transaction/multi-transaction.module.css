@@ -27,7 +27,7 @@
   color: rgba(245, 248, 252, 0.9);
   margin-bottom: 26px;
   letter-spacing: -0.03em;
-  line-height: 1.6;
+  line-height: 130%;
   font-size: 18px;
   color: #fff;
 }
@@ -59,6 +59,7 @@
     order: 1; /* move the title before the logo */
   }
   .multi-transaction > div:last-child {
+    height: 300px;
     order: 3; /* keep the button as the last child */
   }
   .multi-transaction--title {

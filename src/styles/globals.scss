@@ -123,6 +123,10 @@ h6 {
   color: #f5f8fc;
 }
 
+section {
+  margin-bottom: 220px;
+}
+
 @media screen and (max-width: 1024px) {
   .button {
     font-size: 10px;
@@ -136,8 +140,11 @@ h6 {
     padding: 9px 31px;
     font-size: 14px;
   }
-}
-
-section {
-  margin: 220px 0;
+  section {
+    margin-bottom: 100px;
+  }
+  body,
+  html {
+    background: linear-gradient(0deg, #151628, #151628), #f8f9fd;
+  }
 }
