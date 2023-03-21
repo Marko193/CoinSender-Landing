@@ -107,7 +107,7 @@
 .expand_more_icon {
   color: #FFFFFF;
   @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
-    margin-left:10px;
+    margin-left: 10px;
   }
 }
 
@@ -160,7 +160,7 @@
   }
 
   @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
-    margin-bottom: 30px;
+    height: auto;
   }
 }
 
@@ -179,5 +179,9 @@
 
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
     padding: 25px 30px 25px 20px;
+  }
+
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    padding: 30px;
   }
 }
