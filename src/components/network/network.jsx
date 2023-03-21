@@ -87,7 +87,7 @@ export const Network = () => {
                 setOffsetY2
               )
             }
-            onMouseOut={handleMouseOut}
+            onMouseLeave={handleMouseOut}
             style={{
               transform: `translate(${offsetX}px, ${offsetY}px)`,
             }}
@@ -169,7 +169,7 @@ export const Network = () => {
                 setOffsetY
               )
             }
-            onMouseOut={handleMouseOut}
+            onMouseLeave={handleMouseOut}
             style={{
               transform: `translate(${offsetX2}px, ${offsetY2}px)`,
             }}
