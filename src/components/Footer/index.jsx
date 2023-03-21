@@ -86,7 +86,7 @@ export default function Footer() {
             className={styles.terms_of_use}
             onClick={() => router.push("/faq")}
           >
-            FAQ
+            Terms of Use
           </div>
         </div>
       </div>
