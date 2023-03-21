@@ -7,6 +7,7 @@ import SwappableViews from "react-swipeable-views";
 import { data } from "./mockCarouselCardsData";
 
 import TitleDescriptionHelper from "@/components/TitleDescHelper";
+import Link from "next/link";
 
 export default function CoinSenderBenefits() {
   const theme = useTheme();
@@ -139,7 +140,9 @@ export default function CoinSenderBenefits() {
               </div>
             </div>
           </div>
-          <button className={styles.sign_up_button}>Try now</button>
+          <Link href="https://transfer.coinsender.io/auth">
+            <button className={styles.sign_up_button}>Try now</button>
+          </Link>
         </div>
         <div className={styles.carousel_layout}>
           <SwappableViews
@@ -193,7 +196,9 @@ export default function CoinSenderBenefits() {
               </Button>
             }
           />
-          <button className={styles.sign_up_button_mobile}>Try now</button>
+          <Link href="https://transfer.coinsender.io/auth">
+            <button className={styles.sign_up_button_mobile}>Try now</button>
+          </Link>
         </div>
       </div>
     </section>

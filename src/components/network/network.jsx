@@ -40,6 +40,8 @@ import SCIENCE from "../../assets/images/networks/science.svg";
 import BUSD from "../../assets/images/networks/busd.svg";
 import BTC from "../../assets/images/networks/btc.svg";
 import APE from "../../assets/images/networks/ape.svg";
+import LeftArrow from "../../assets/images/networks/left-arrow.svg";
+import RightArrow from "../../assets/images/networks/right-arrow.svg";
 
 export const Network = () => {
   const [offsetX, setOffsetX] = useState(0);
@@ -91,36 +93,39 @@ export const Network = () => {
             style={{
               transform: `translate(${offsetX}px, ${offsetY}px)`,
             }}
+            className={styles.desktop_icons}
           >
-            <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={Oasis} alt="" />
-              <Image src={Sol} alt="" />
-              <Image src={Dot} alt="" />
-            </div>
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
               <Image src={CPolygon} alt="" />
               <Image src={Colgate} alt="" />
               <Image src={ETH} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={USDC} alt="" />
-              <Image src={USDT} alt="" />
-              <Image src={BCH} alt="" />
+              <Image src={Oasis} alt="" />
+              <Image src={Sol} alt="" />
+              <Image src={Dot} alt="" />
             </div>
+
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
               <Image src={Matic} alt="" />
               <Image src={BNB} alt="" />
               <Image src={Romb} alt="" />
             </div>
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
-              <Image src={Heco} alt="" />
-              <Image src={Bird} alt="" />
-              <Image src={XML} alt="" />
+              <Image src={USDC} alt="" />
+              <Image src={USDT} alt="" />
+              <Image src={BCH} alt="" />
             </div>
+
             <div style={{ display: "flex", gap: "20px", marginLeft: "90px" }}>
               <Image src={Arrows} alt="" />
               <Image src={HBar} alt="" />
               <Image src={LTC} alt="" />
+            </div>
+            <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
+              <Image src={Heco} alt="" />
+              <Image src={Bird} alt="" />
+              <Image src={XML} alt="" />
             </div>
           </div>
         </div>
@@ -133,9 +138,19 @@ export const Network = () => {
         >
           <div>
             <div className={styles.title + " " + styles.arrows}>
-              <div className={styles.arrows_text}>Available in the app</div>
-              <div>Networks</div>
-              <div className={styles.arrows_text}>In the testing process</div>
+              <div className={styles.arrows_text}>
+                <div>
+                  <Image src={LeftArrow} />
+                </div>
+                <div>Available in the app</div>
+              </div>
+              <div className={styles.main_title}>Networks</div>
+              <div className={styles.arrows_text}>
+                <div>In the testing process</div>
+                <div>
+                  <Image src={RightArrow} />
+                </div>
+              </div>
             </div>
             <div className={styles.section_description}>
               This sector is moving fast, so we’re constantly innovating to keep
@@ -173,6 +188,7 @@ export const Network = () => {
             style={{
               transform: `translate(${offsetX2}px, ${offsetY2}px)`,
             }}
+            className={styles.desktop_icons}
           >
             <div style={{ display: "flex", gap: "20px", marginBottom: "10px" }}>
               <Image src={APE} alt="" />
