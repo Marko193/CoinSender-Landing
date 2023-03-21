@@ -52,7 +52,7 @@
     display: none;
   }
   .multi-transaction--logo {
-    padding: 20px;
+    padding: 10px;
     order: 2; /* move the logo after the title */
   }
   .multi-transaction > div:first-child {

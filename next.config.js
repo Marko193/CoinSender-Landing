@@ -2,20 +2,20 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  exportPathMap: async function (
-      defaultPathMap,
-      { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-      '/privacy_policy': { page: '/privacy_policy' },
-      '/faq': { page: '/faq'}
-    }
-  },
-}
+  // exportPathMap: async function (
+  //     defaultPathMap,
+  //     { dev, dir, outDir, distDir, buildId }
+  // ) {
+  //   return {
+  //     '/': { page: '/' },
+  //     '/privacy_policy': { page: '/privacy_policy' },
+  //     '/faq': { page: '/faq'}
+  //   }
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

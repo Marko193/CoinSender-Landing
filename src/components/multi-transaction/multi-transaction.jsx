@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "../../assets/images/animation.gif";
 import styles from "./multi-transaction.module.css";
+import Link from "next/link";
 
 export const MultiTransactionSection = () => {
   return (
@@ -20,16 +21,13 @@ export const MultiTransactionSection = () => {
               recipients – we'll handle the rest.
             </div>
             <div>
-              <button className="button">Get Started</button>
+              <Link href="https://transfer.coinsender.io/auth">
+                <button className="button">Get Started</button>
+              </Link>
             </div>
           </div>
           <div className="multi-transaction--logo">
-            <Image
-              style={{ padding: "45px 21px 42px 39px" }}
-              src={Logo}
-              fill
-              alt=""
-            />
+            <Image style={{ padding: "20px 30px" }} src={Logo} fill alt="" />
           </div>
         </div>
       </div>

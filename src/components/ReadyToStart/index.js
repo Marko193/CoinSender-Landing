@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./ready-to-start.module.scss";
 
 export default function ReadyToStart() {
@@ -13,9 +14,11 @@ export default function ReadyToStart() {
             Sign up for CoinSender today and start enjoying the benefits of
             fast, secure, and hassle-free multi-transaction payments.
           </div>
-          <button className={styles.sign_up_button}>
-            Sign up for progress
-          </button>
+          <Link href="https://transfer.coinsender.io/auth">
+            <button className={styles.sign_up_button}>
+              Sign up for progress
+            </button>
+          </Link>
         </div>
       </div>
     </section>
