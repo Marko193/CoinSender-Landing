@@ -19,9 +19,9 @@
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (min-width: 1024px) and (max-width: $screen-desktop-max) {
-    justify-content: space-around;
-  }
+  //@media screen and (min-width: 1024px) and (max-width: $screen-desktop-max) {
+  //  justify-content: space-around;
+  //}
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -60,6 +60,8 @@
 }
 
 .footer__desktop_menu {
+  margin-top: 5px;
+
   @media screen and (max-width: 1024px) {
     width: 100%;
   }
