@@ -10,17 +10,6 @@ export const Header = () => {
     const router = useRouter();
     const [isActive, setIsActive] = useState(false);
 
-    const items = [
-        {name: "Home", link: "#home"},
-        {name: "Features", link: "#features"},
-        {name: "How it works", link: "#howitworks"},
-        {name: "Benefits", link: "#benefits"},
-        {name: "Pricing", link: "#pricing"},
-        {name: "Intagrations", link: "#integrations"},
-        {name: "Roadmap", link: "#roadmap"},
-        {name: "FAQ", link: "#faq"},
-    ];
-
     return (
         <header className={styles.header}>
             <div className={styles.header__container + " container"}>
@@ -69,7 +58,7 @@ export const Header = () => {
                     <span></span>
                 </div>
             </div>
-            <BurgerMenu isActive={isActive} setIsActive={setIsActive} items={items}/>
+            <BurgerMenu isActive={isActive} setIsActive={setIsActive}/>
         </header>
     );
 };
