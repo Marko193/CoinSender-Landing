@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./user-styles.module.scss";
 import TitleDescriptionHelper from "@/components/TitleDescHelper";
 
@@ -98,7 +99,9 @@ export default function UserFriendlyFeatures() {
           </div>
           <div className={styles.cards_group_row} id={styles.sign_up_layout}>
             <div className={styles.sign_up}>
-              <button className={styles.sign_up_button}>Sign up</button>
+              <Link href="https://transfer.coinsender.io/auth">
+                <button className={styles.sign_up_button}>Sign up</button>
+              </Link>
               <div className={styles.sign_up_description}>
                 Sign up for CoinSender today and experience the power of fast,
                 secure, and easy multi-transaction payouts in cryptocurrency.

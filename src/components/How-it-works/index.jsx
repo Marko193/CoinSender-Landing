@@ -12,6 +12,7 @@ import MobileStepper from "@mui/material/MobileStepper";
 import Button from "@mui/material/Button";
 import SwappableViews from "react-swipeable-views";
 import { useState } from "react";
+import Link from "next/link";
 
 const items = [
   {
@@ -144,7 +145,9 @@ export const HowItWorks = () => {
             </div>
           ))}
           <div className={styles.block}>
-            <button>Try now</button>
+            <Link href="https://transfer.coinsender.io/auth">
+              <button>Try now</button>
+            </Link>
           </div>
         </div>
 
@@ -174,7 +177,9 @@ export const HowItWorks = () => {
             ))}
           </SwappableViews>
         </div>
-        <button className={styles.try + " button"}>Try now</button>
+        <Link href="https://transfer.coinsender.io/auth">
+          <button className={styles.try + " button"}>Try now</button>
+        </Link>
       </div>
     </section>
   );

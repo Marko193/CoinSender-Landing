@@ -37,7 +37,9 @@ export const Header = () => {
           </ul>
         </div>
         <div className={styles.header__signup}>
-          <button className="button">Sign Up</button>
+          <Link href="https://transfer.coinsender.io/auth">
+            <button className="button">Sign Up</button>
+          </Link>
         </div>
         <div
           onClick={() => setIsActive(!isActive)}

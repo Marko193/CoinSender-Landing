@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./backend-product.module.scss";
 
 export default function BackendProduct() {
@@ -69,7 +70,9 @@ export default function BackendProduct() {
                 <img src="/assets/mock_avatars/six.png" alt="avatar" />
               </div>
             </div>
-            <button className={styles.discover_button}>Discover</button>
+            <Link href="https://transfer.coinsender.io/auth">
+              <button className={styles.discover_button}>Discover</button>
+            </Link>
             <div className={styles.bottom_image_wrapper}>
               <div className={styles.bottom_image_container}>
                 <img
