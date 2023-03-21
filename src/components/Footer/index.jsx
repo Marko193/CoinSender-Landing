@@ -81,7 +81,13 @@ export default function Footer() {
             Privacy policy
           </div>
           <span className={styles.dot}></span>
-          <div className={styles.terms_of_use}>Terms of Use</div>
+          {/*<div className={styles.terms_of_use}>Terms of Use</div>*/}
+          <div
+            className={styles.terms_of_use}
+            onClick={() => router.push("/faq")}
+          >
+            FAQ
+          </div>
         </div>
       </div>
     </footer>

@@ -5,21 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 95px;
+
 
   @media screen and (max-width: $screen-tablet-max) {
     display: block;
     padding: 0 16px 0 16px;
   }
-
-  //@media screen and (min-width: $screen-tv-min) {
-  //  width: 1225px;
-  //}
 }
 
 .title_description_block {
-
   margin-top: 105px;
-  //background-color: green;
   text-align: center;
 
   @media screen and (max-width: $screen-tablet-max) {
@@ -58,15 +54,128 @@
 }
 
 .accordions_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 55px;
-  //background-color: blue;
 
   @media screen and (max-width: $screen-tablet-max) {
     margin-top: 30px;
+    flex-direction: column;
   }
 
-  @media screen and (min-width: $screen-tv-min) {
-    width: 1225px;
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    width: 100%;
+  }
 
+  @media screen and (min-width: 1225px) {
+    width: 1225px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    justify-content: space-between;
+  }
+}
+
+.accordion_column {
+
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    margin: 0 30px 0 30px;
+  }
+
+  @media screen and (min-width: 1225px) {
+    width: 595px;
+  }
+}
+
+.accordion_main_content {
+  margin-bottom: 35px;
+  background: rgba(34, 36, 57, 0.6);
+  border: 1px solid #36394C;
+  border-radius: 13px;
+
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    width: auto;
+  }
+
+  @media screen and (max-width: 1224px) {
+    margin-bottom: 30px;
+  }
+}
+
+.expand_more_icon {
+  color: #FFFFFF;
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    margin-left:10px;
+  }
+}
+
+.accordion_name_block {
+  height: 100px;
+  padding: 0 45px 0 30px;
+  background-color: #202236;
+  border-bottom: 1px solid #36394C;
+  border-radius: 13px;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    height: 74px;
+    padding: 0 35px 0 15px;
+  }
+
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    height: 75px;
+    padding: 0 10px 0 20px;
+  }
+}
+
+.name_block_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #F5F8FC;
+
+  @media screen and (max-width: 1224px) {
+    font-size: initial;
+  }
+
+  @media screen and (min-width: 1225px) {
+    width: 400px;
+  }
+}
+
+.accordionRoot {
+
+}
+
+.accordion_details_root {
+  height: 140px;
+  padding: 0;
+  border-radius: 13px;
+
+  @media screen and (max-width: $screen-tablet-max) {
+    height: 150px;
+  }
+
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    margin-bottom: 30px;
+  }
+}
+
+.details_content {
+  padding: 30px 30px 0 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  color: rgba(245, 248, 252, 0.9);
+
+  @include phones {
+    font-size: 14px;
+    padding: 25px 30px 25px 20px;
+  }
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+    padding: 25px 30px 25px 20px;
   }
 }
