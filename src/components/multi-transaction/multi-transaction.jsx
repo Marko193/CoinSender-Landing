@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/animation.gif";
 import styles from "./multi-transaction.module.css";
 
 export const MultiTransactionSection = () => {
