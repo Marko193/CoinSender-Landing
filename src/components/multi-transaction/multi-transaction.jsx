@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Logo from "../../assets/images/animation.gif";
-import styles from "./multi-transaction.module.css";
+import styles from "./multi-transaction.module.scss";
 import Link from "next/link";
 
 export const MultiTransactionSection = () => {
   return (
-    <section id="/" className={styles.section}>
-      <div className="container">
-        <div className={styles["multi-transaction"]}>
-          <div>
+    <div id="/" className={styles.section}>
+      <div className={styles.container}>
+          <div className={styles.text_column}>
             <div className={styles["multi-transaction--title"]}>
               Fast and Convenient <br /> <span>Multi-Transaction </span> Payouts
               <br /> with CoinSender
@@ -22,15 +21,16 @@ export const MultiTransactionSection = () => {
             </div>
             <div>
               <Link href="https://transfer.coinsender.io/auth">
-                <button className="button">Get Started</button>
+                <button className="button" id={styles.desktop_btn}>Get Started</button>
               </Link>
             </div>
           </div>
-          <div className="multi-transaction--logo">
-            <Image src={Logo} fill alt="" />
+          <div className={styles.logo_wrapper}>
+            <Image className={styles.logo} src={Logo} alt="img"  />
           </div>
+          <button className={styles.mobile_btn}>Get Started</button>
         </div>
-      </div>
-    </section>
+
+    </div>
   );
 };

@@ -1,0 +1,162 @@
+@import "./src/styles/breakpoints.scss";
+
+.section {
+  margin: 55px 3% 200px 3%;
+
+  @include phones {
+    margin: 50px 16px 100px 16px;
+  }
+
+  @media screen and (min-width: $screen-tablet-min) and (min-width: 1440px) {
+    margin: 55px 24px 200px 115px;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+
+  @include phones {
+    //display: block;
+    //justify-content: start;
+  }
+
+  @media screen and (max-width: $screen-desktop-max) {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.text_column {
+  @media screen and (min-width: 1440px) and (max-width: 1600px) {
+    flex: 0 0 60%;
+  }
+
+  @media screen and (min-width: 1900px) {
+    flex: 0 0 50%;
+  }
+}
+
+.multi-transaction {
+  //display: grid;
+  //width: 100%;
+  //grid-template-columns: 4fr 2fr;
+  ////display: flex;
+  ////flex-direction: row;
+  ////justify-content: space-between;
+  //align-items: center;
+  //gap: 46px;
+
+}
+
+.multi-transaction--title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 24px;
+  color: #fff;
+  line-height: 130%;
+}
+
+.multi-transaction--title span {
+  color: #02abb4;
+}
+
+.multi-transaction--description {
+  font-weight: 400;
+  color: rgba(245, 248, 252, 0.9);
+  margin-bottom: 26px;
+  letter-spacing: -0.03em;
+  line-height: 130%;
+  font-size: 18px;
+  color: #fff;
+}
+
+#desktop_btn {
+  @media screen and (max-width: $screen-desktop-max) {
+    display: none;
+  }
+}
+
+.mobile_btn {
+  margin-top: 25px;
+  width: 338px;
+  height: 36px;
+  color: white;
+  background: linear-gradient(105.88deg, #092C3E 13.55%, #00E8EB 148.77%, #8BFFFF 285.75%), linear-gradient(112.83deg, #092C3E -79.56%, #00E8EB 103.99%, #8BFFFF 289.92%);
+  border: 1px solid rgba(245, 248, 252, 0.3);
+  border-radius: 51px;
+
+  @media screen and (min-width: $screen-tv-min) {
+    display: none;
+  }
+}
+
+
+.logo_wrapper {
+  //display: flex;
+  //position: relative;
+  //justify-content: center;
+  //align-items: center;
+  //background-color: green;
+}
+
+.logo {
+  width: 470px !important;
+  height: 470px !important;
+  border: 1px solid #36394c;
+  border-radius: 13px;
+  background: rgba(34, 36, 57, 0.6);
+
+  @media screen and (max-width: 400px){
+    width: 340px !important;
+    height: 340px !important;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: $screen-laptop-max) {
+    margin: 0 auto;
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .multi-transaction {
+    grid-template-columns: 1fr;
+  }
+
+  .multi-transaction--description {
+    display: none;
+  }
+
+  .multi-transaction--logo {
+    padding: 10px;
+    order: 2; /* move the logo after the title */
+  }
+
+  .multi-transaction > div:first-child {
+    order: 1; /* move the title before the logo */
+  }
+
+  .multi-transaction > div:last-child {
+    height: 400px;
+    order: 3; /* keep the button as the last child */
+  }
+
+  .multi-transaction--title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .multi-transaction--logo {
+    height: 200px;
+  }
+
+  .multi-transaction--logo img {
+    max-height: 100%;
+  }
+}

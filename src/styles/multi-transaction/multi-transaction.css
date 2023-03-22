@@ -27,15 +27,8 @@
 }
 
 .multi-transaction--logo {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  background: rgba(34, 36, 57, 0.6);
-  border: 1px solid #36394c;
-  border-radius: 13px;
-  height: 470px;
-  padding: 45px 21px 42px 39px;
+
+
 }
 @media screen and (max-width: 768px) {
   .multi-transaction {
