@@ -12,7 +12,6 @@ export const Header = () => {
     const [isActive, setIsActive] = useState(false);
 
     const items = [
-        {name: "Home", link: "/"},
         {name: "Features", link: "features"},
         {name: "How it works", link: "howitworks"},
         {name: "Benefits", link: "benefits"},
@@ -26,12 +25,16 @@ export const Header = () => {
         <header className={styles.header}>
             <div className={styles.header__container + " container"}>
                 <div>
-                    <Link href="/">
+                    <Link href="/" onClick={() => router.push(`/`)}>
                         <Image src={Logo} alt=""/>
                     </Link>
                 </div>
                 <div className={styles.header__desktop_menu}>
                     <ul className={styles.header__nav}>
+                        <li onClick={() => router.push(`/`)}>
+                            <NextLink href={`/`}>Home</NextLink>
+                        </li>
+
                         {items.map(({name, link}, index) => (
                             <li key={index}>
                                 <Link

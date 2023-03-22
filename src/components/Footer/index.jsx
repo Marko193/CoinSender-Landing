@@ -11,7 +11,6 @@ export default function Footer() {
     const router = useRouter();
 
     const items = [
-        {name: "Home", link: "/"},
         {name: "Features", link: "features"},
         {name: "How it works", link: "howitworks"},
         {name: "Benefits", link: "benefits"},
@@ -30,6 +29,11 @@ export default function Footer() {
                 </div>
                 <div className={styles.footer__desktop_menu}>
                     <ul className={styles.footer__nav}>
+
+                        <li onClick={() => router.push(`/`)}>
+                            <NextLink href={`/`}>Home</NextLink>
+                        </li>
+
                         {items.map(({name, link}, index) => (
                             <li key={index}>
                                 <Link
@@ -43,8 +47,8 @@ export default function Footer() {
                                 </Link>
                             </li>
                         ))}
-                        <li onClick={() => router.push(`/faq`)}>
-                            <Link href={`/faq`}>FAQ</Link>
+                        <li>
+                            <span onClick={() => router.push("/faq")}>FAQ</span>
                         </li>
                     </ul>
                 </div>
