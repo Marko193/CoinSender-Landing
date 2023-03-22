@@ -40,8 +40,8 @@
   background: rgba(34, 36, 57, 0.6);
   border: 1px solid #36394c;
   border-radius: 13px;
-  height: 470px;
-  padding: 45px 21px 42px 39px;
+  height: 300px;
+  /* padding: 45px 21px 42px 39px; */
 }
 
 @media screen and (max-width: 768px) {
@@ -59,7 +59,7 @@
     order: 1; /* move the title before the logo */
   }
   .multi-transaction > div:last-child {
-    height: 300px;
+    height: 400px;
     order: 3; /* keep the button as the last child */
   }
   .multi-transaction--title {

@@ -142,11 +142,11 @@ export const Network = () => {
                 <div>
                   <Image src={LeftArrow} />
                 </div>
-                <div>Available in the app</div>
+                <div className={styles.subtitles}>Available in the app</div>
               </div>
               <div className={styles.main_title}>Networks</div>
               <div className={styles.arrows_text}>
-                <div>In the testing process</div>
+                <div className={styles.subtitles}>In the testing process</div>
                 <div>
                   <Image src={RightArrow} />
                 </div>
@@ -237,7 +237,7 @@ export const Network = () => {
           </div>
           <div>
             <div className={styles.subtitle}>
-              <div>Available in the app</div>
+              <div className={styles.subtitles}>Available in the app</div>
             </div>
             <div className={styles.icons}>
               <div style={{ position: "relative" }}>
@@ -270,7 +270,7 @@ export const Network = () => {
           </div>
           <div>
             <div className={styles.subtitle}>
-              <div>In the testing process</div>
+              <div className={styles.subtitles}>In the testing process</div>
             </div>
 
             <div className={styles.icons} style={{ paddingBottom: "60px" }}>

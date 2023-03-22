@@ -20,6 +20,9 @@
   display: flex;
   gap: 32px;
 }
+.header__nav li {
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .header__desktop_menu {
     display: none;

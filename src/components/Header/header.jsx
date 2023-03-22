@@ -3,20 +3,21 @@ import { BurgerMenu } from "../burger-menu/burger-menu";
 import styles from "./header.module.css";
 import Logo from "../../assets/images/logo-header.svg";
 import Image from "next/image";
-import Link from "next/link";
+import NextLink from "next/link";
+import { Link } from "react-scroll";
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
   const items = [
-    { name: "Home", link: "#home" },
-    { name: "Features", link: "#features" },
-    { name: "How it works", link: "#howitworks" },
-    { name: "Benefits", link: "#benefits" },
-    { name: "Pricing", link: "#pricing" },
-    { name: "Intagrations", link: "#integrations" },
-    { name: "Roadmap", link: "#roadmap" },
-    { name: "FAQ", link: "#faq" },
+    { name: "Home", link: "/" },
+    { name: "Features", link: "features" },
+    { name: "How it works", link: "howitworks" },
+    { name: "Benefits", link: "benefits" },
+    { name: "Pricing", link: "pricing" },
+    { name: "Intagrations", link: "integrations" },
+    { name: "Roadmap", link: "roadmap" },
+    { name: "FAQ", link: "faq" },
   ];
 
   return (
@@ -31,15 +32,23 @@ export const Header = () => {
           <ul className={styles.header__nav}>
             {items.map(({ name, link }, index) => (
               <li key={index}>
-                <Link href={"/" + link}>{name}</Link>
+                <Link
+                  to={link}
+                  spy={true}
+                  smooth={true}
+                  offset={-40}
+                  duration={1}
+                >
+                  {name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
         <div className={styles.header__signup}>
-          <Link href="https://transfer.coinsender.io/auth">
+          <NextLink href="https://transfer.coinsender.io/auth">
             <button className="button">Sign Up</button>
-          </Link>
+          </NextLink>
         </div>
         <div
           onClick={() => setIsActive(!isActive)}

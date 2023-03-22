@@ -21,15 +21,18 @@
   font-size: 48px;
   line-height: 130%;
   color: #f5f8fc;
+  font-family: "myFontBold", sans-serif;
 
   @include phones {
     width: 80%;
     font-size: 26px;
+    font-family: "myFontBold", sans-serif;
   }
 
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-laptop-max) {
     padding-top: 20px;
     text-align: center;
+    font-family: "myFontBold", sans-serif;
   }
 }
 

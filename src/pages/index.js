@@ -11,6 +11,7 @@ import { Network } from "@/components/network/network";
 import { Roadmap } from "@/components/Roadmap/Roadmap";
 import Footer from "@/components/Footer";
 import { ContactForm } from "@/components/contact/contact";
+
 export default function Home() {
   return (
     <>
@@ -32,6 +33,7 @@ export default function Home() {
         <BackendProduct />
         <ContactForm />
       </main>
+
       <Footer />
     </>
   );

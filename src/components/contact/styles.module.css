@@ -65,6 +65,9 @@
   .fixed {
     width: 100%;
   }
+  .title {
+    font-size: 26px;
+  }
 }
 
 .modal {

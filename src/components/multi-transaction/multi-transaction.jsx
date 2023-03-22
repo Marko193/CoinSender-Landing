@@ -27,7 +27,7 @@ export const MultiTransactionSection = () => {
             </div>
           </div>
           <div className="multi-transaction--logo">
-            <Image style={{ padding: "20px 30px" }} src={Logo} fill alt="" />
+            <Image src={Logo} fill alt="" />
           </div>
         </div>
       </div>
