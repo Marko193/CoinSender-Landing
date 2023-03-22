@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const MultiTransactionSection = () => {
   return (
-    <section className={styles.section}>
+    <section id="/" className={styles.section}>
       <div className="container">
         <div className={styles["multi-transaction"]}>
           <div>
@@ -27,7 +27,7 @@ export const MultiTransactionSection = () => {
             </div>
           </div>
           <div className="multi-transaction--logo">
-            <Image style={{ padding: "20px 30px" }} src={Logo} fill alt="" />
+            <Image src={Logo} fill alt="" />
           </div>
         </div>
       </div>

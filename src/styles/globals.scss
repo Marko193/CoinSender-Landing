@@ -40,6 +40,11 @@ html {
   src: url("../assets/fonts/altone-trial.regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "myFontBold";
+  src: url("../assets/fonts/altone-trial.bold.ttf") format("truetype");
+}
+
 html,
 body {
   // font-family: "Altone Trial", sans-serif;
