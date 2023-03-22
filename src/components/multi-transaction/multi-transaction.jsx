@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const MultiTransactionSection = () => {
   return (
-    <section className={styles.section}>
+    <section id="/" className={styles.section}>
       <div className="container">
         <div className={styles["multi-transaction"]}>
           <div>

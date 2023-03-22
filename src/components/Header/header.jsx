@@ -5,8 +5,10 @@ import Logo from "../../assets/images/logo-header.svg";
 import Image from "next/image";
 import NextLink from "next/link";
 import { Link } from "react-scroll";
+import { useRouter } from "next/router";
 
 export const Header = () => {
+  const router = useRouter();
   const [isActive, setIsActive] = useState(false);
 
   const items = [
@@ -17,7 +19,7 @@ export const Header = () => {
     { name: "Pricing", link: "pricing" },
     { name: "Intagrations", link: "integrations" },
     { name: "Roadmap", link: "roadmap" },
-    { name: "FAQ", link: "faq" },
+    { name: "Contact", link: "contact" },
   ];
 
   return (
@@ -31,8 +33,9 @@ export const Header = () => {
         <div className={styles.header__desktop_menu}>
           <ul className={styles.header__nav}>
             {items.map(({ name, link }, index) => (
-              <li key={index}>
+              <li>
                 <Link
+                  key={index}
                   to={link}
                   spy={true}
                   smooth={true}
@@ -43,6 +46,10 @@ export const Header = () => {
                 </Link>
               </li>
             ))}
+
+            <li onClick={() => router.push(`/faq`)}>
+              <NextLink href={`/faq`}>FAQ</NextLink>
+            </li>
           </ul>
         </div>
         <div className={styles.header__signup}>
@@ -57,7 +64,7 @@ export const Header = () => {
           <span></span>
         </div>
       </div>
-      <BurgerMenu isActive={isActive} setIsActive={setIsActive} items={items} />
+      <BurgerMenu isActive={isActive} setIsActive={setIsActive} />
     </header>
   );
 };

@@ -11,7 +11,7 @@ export default function Footer() {
   const router = useRouter();
 
   const items = [
-    { name: "Home", link: "home" },
+    { name: "Home", link: "/" },
     { name: "Features", link: "features" },
     { name: "How it works", link: "howitworks" },
     { name: "Benefits", link: "benefits" },
@@ -19,7 +19,6 @@ export default function Footer() {
     { name: "Intagrations", link: "integrations" },
     { name: "Roadmap", link: "roadmap" },
     { name: "Backed by Product Company", link: "backed" },
-    { name: "FAQ", link: "faq" },
     { name: "Contact", link: "contact" },
   ];
 
@@ -32,8 +31,9 @@ export default function Footer() {
         <div className={styles.footer__desktop_menu}>
           <ul className={styles.footer__nav}>
             {items.map(({ name, link }, index) => (
-              <li key={index}>
+              <li>
                 <Link
+                  key={index}
                   to={link}
                   spy={true}
                   smooth={true}
@@ -44,43 +44,46 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li onClick={() => router.push(`/faq`)}>
+              <Link href={`/faq`}>FAQ</Link>
+            </li>
           </ul>
         </div>
       </div>
       <div className={styles.icons_row}>
-        <NextLink href="https://twitter.com/coinsender?s=21&t=ViD6j5YwOt_YiKArWEPrMA">
+        <Link href="https://twitter.com/coinsender?s=21&t=ViD6j5YwOt_YiKArWEPrMA">
           <img src="/assets/socials_icons/logo_twitter.svg" alt="social_icon" />
-        </NextLink>
-        <NextLink href="https://t.me/community_coinsender">
+        </Link>
+        <Link href="https://t.me/community_coinsender">
           <img
             src="/assets/socials_icons/logo_telegram.svg"
             alt="social_icon"
           />
-        </NextLink>
-        <NextLink href="https://discord.gg/uwDcyU7r">
+        </Link>
+        <Link href="https://discord.gg/uwDcyU7r">
           <img src="/assets/socials_icons/logo_discord.svg" alt="social_icon" />
-        </NextLink>
-        <NextLink href="https://twitter.com/coinsender?s=21&t=ViD6j5YwOt_YiKArWEPrMA">
+        </Link>
+        <Link href="https://twitter.com/coinsender?s=21&t=ViD6j5YwOt_YiKArWEPrMA">
           <img
             src="/assets/socials_icons/logo_instagram.svg"
             alt="social_icon"
           />
-        </NextLink>
-        <NextLink href="https://www.linkedin.com/company/coinsender/">
+        </Link>
+        <Link href="https://www.linkedin.com/company/coinsender/">
           <img
             src="/assets/socials_icons/logo_linkedin.svg"
             alt="social_icon"
           />
-        </NextLink>
-        <NextLink href="https://www.facebook.com/profile.php?id=100090399190512&mibextid=LQQJ4d">
+        </Link>
+        <Link href="https://www.facebook.com/profile.php?id=100090399190512&mibextid=LQQJ4d">
           <img
             src="/assets/socials_icons/logo_facebook.svg"
             alt="social_icon"
           />
-        </NextLink>
-        <NextLink href="https://youtube.com/@CoinSender">
+        </Link>
+        <Link href="https://youtube.com/@CoinSender">
           <img src="/assets/socials_icons/logo_youtube.svg" alt="social_icon" />
-        </NextLink>
+        </Link>
       </div>
       <div className={styles.privacy_policy_wrapper}>
         <div className={styles.privacy_policy_layout}>
@@ -91,13 +94,7 @@ export default function Footer() {
             Privacy policy
           </div>
           <span className={styles.dot}></span>
-          {/*<div className={styles.terms_of_use}>Terms of Use</div>*/}
-          <div
-            className={styles.terms_of_use}
-            onClick={() => router.push("/faq")}
-          >
-            FAQ
-          </div>
+          <div className={styles.terms_of_use}>Terms of Use</div>
         </div>
       </div>
     </footer>

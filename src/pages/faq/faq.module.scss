@@ -57,7 +57,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   margin-top: 55px;
 
   @media screen and (max-width: $screen-tablet-max) {
@@ -93,7 +92,7 @@
   margin-bottom: 35px;
   background: rgba(34, 36, 57, 0.6);
   border: 1px solid #36394C;
-  border-radius: 13px;
+  //border-radius: 13px !important;
 
   @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
     width: auto;
@@ -107,16 +106,16 @@
 .expand_more_icon {
   color: #FFFFFF;
   @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
-    margin-left:10px;
+    margin-left: 10px;
   }
 }
 
 .accordion_name_block {
   height: 100px;
   padding: 0 45px 0 30px;
-  background-color: #202236;
+  background-color: #202236 !important;
   border-bottom: 1px solid #36394C;
-  border-radius: 13px;
+  //border-radius: 13px !important;
 
   @media screen and (max-width: $screen-tablet-max) {
     height: 74px;
@@ -145,20 +144,22 @@
 }
 
 .accordionRoot {
-
+  //background-color: #151B2D !important;
 }
 
 .accordion_details_root {
   height: 140px;
   padding: 0;
-  border-radius: 13px;
+  //border-radius: 13px !important;
+  background-color: #151B2D !important;
+
 
   @media screen and (max-width: $screen-tablet-max) {
     height: 150px;
   }
 
   @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
-    margin-bottom: 30px;
+    height: auto;
   }
 }
 
@@ -177,5 +178,9 @@
 
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
     padding: 25px 30px 25px 20px;
+  }
+
+  @media screen and (min-width: $screen-laptop-min) and (max-width: 1224px) {
+    padding: 30px;
   }
 }
